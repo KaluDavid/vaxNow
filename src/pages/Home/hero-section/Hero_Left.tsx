@@ -1,0 +1,52 @@
+import React from "react";
+import { Download } from "../../../components/Download";
+import { motion } from "framer-motion";
+import useScaleTop from "../../../utils/motions/MotionHooks/useScaleTop";
+export function Hero_Left() {
+  const scaleFromTop = useScaleTop();
+  return (
+    <>
+      <motion.section
+        {...scaleFromTop}
+        className="flex flex-col items-start text-left"
+      >
+        <div className="flex items-start flex-col gap-6">
+          <h1 className="font-nunito [&_span]:text-blue-600 font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
+            Never miss a vaccine dose. Your <span>Vaccination tracker</span> and
+            reminder
+          </h1>
+          <span className="text-xl font-normal tracking-[-0.1px] w-[433px] leading-8">
+            A comprehensive health management tool that goes beyond traditional
+            medication tracking
+          </span>
+          <div className="flex items-center gap-6 justify-between [&_div]:flex [&_div]:items-start [&_div]:flex-col">
+            <div className=" *:first:text-[32px] *:first:font-nunito *:first:font-semibold *:last:text-xl *:last:font-nunito-sans">
+              <span>5k+</span>
+              <span>Active users</span>
+            </div>
+            <hr className="bg-gray-400 h-12 w-[1px]" />
+            <div className=" *:first:text-[32px] *:first:font-nunito *:first:font-semibold *:last:text-xl *:last:font-nunito-sans">
+              <span>300k+</span>
+              <span>Downloads</span>
+            </div>
+          </div>
+          <div className="flex items-start gap-[88px] flex-col">
+            <Download playstore="*:text-blue-800 bg-gray-100 " />
+            <div className="flex flex-col gap-6">
+              <p className="text-gray-900 text-xl font-bold font-nunito ">
+                Approved by
+              </p>
+              <fieldset className="flex items-center gap-6">
+                <img
+                  src="/assets/home_img/NGHealth.svg"
+                  alt="ministry of health"
+                />
+                <img src="/assets/home_img/NAFDAC.svg" alt="NAFDAC" />
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </motion.section>
+    </>
+  );
+}
