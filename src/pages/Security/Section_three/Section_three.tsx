@@ -1,18 +1,41 @@
 import React from "react";
+import { motion } from "framer-motion";
+import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
+import WordAnime from "../../../utils/motions/WordAnime";
+import {
+  slideInLeftRight,
+  slideInRightLeft,
+} from "../../../utils/motions/motionVariants";
 
 export function Section_three() {
+  const reveal = useRevealOnScroll();
+  const slideLeft = slideInLeftRight();
+  const slideRight = slideInRightLeft();
+
   return (
     <>
       <div className="flex items-center flex-col justify-between size-full text-blue-800  bg-no-repeat  gap-20 text-left">
-        <h1 className="text-center font-nunito text-5xl font-semibold leading-16">
-          Data breach response plan
-        </h1>
+        <WordAnime style="!text-5xl" text="Data breach response plan" />
 
-        <div className="grid grid-cols-2 gap-20 items-center *:last:grid *:last:grid-cols-1 *:last:gap-20 pr-52">
-          <fieldset className="*:size-full *:object-contain items-center">
+        <motion.div
+          {...reveal}
+          className="grid grid-cols-2 gap-20 items-center *:last:grid *:last:grid-cols-1 *:last:gap-20 pr-52"
+        >
+          <motion.fieldset
+            variants={slideLeft}
+            initial="initial"
+            whileInView={"animate"}
+            viewport={{ once: true }}
+            className="*:size-full *:object-contain items-center"
+          >
             <img src="/assets/security/data.png" alt="data breach" />
-          </fieldset>
-          <div>
+          </motion.fieldset>
+          <motion.div
+            variants={slideRight}
+            initial="initial"
+            whileInView={"animate"}
+            viewport={{ once: true }}
+          >
             <p className="text-xl col-span-1 font-nunito-sans font-normal leading-[30px]">
               In the unlikely event of a data breach, Vaxnow has a comprehensive
               response plan in place. We will promptly inform affected users,
@@ -23,15 +46,29 @@ export function Section_three() {
               Our team is trained to handle such incidents swiftly and
               transparently to minimize any risk to your data.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="bg-blue-50 px-20 pb-[76px] pt-[84px] w-full text-blue-800">
+        <motion.div
+          {...reveal}
+          className="bg-blue-50 px-20 pb-[76px] pt-[84px] w-full text-blue-800"
+        >
           <div className="py-6 pl-6 rounded-2xl flex   w-full items-center border border-blue-600 rounded-tr-[100px] gap-8 *:last:grid *:last:gap-4 *:last:grid-cols-1 pr-44">
-            <fieldset className="*:w-[450px]  *:object-contain items-center">
+            <motion.fieldset
+              variants={slideLeft}
+              initial="initial"
+              whileInView={"animate"}
+              viewport={{ once: true }}
+              className="*:w-[450px]  *:object-contain items-center"
+            >
               <img src="/assets/security/security.png" alt="security" />
-            </fieldset>
-            <div>
+            </motion.fieldset>
+            <motion.div
+              variants={slideRight}
+              initial="initial"
+              whileInView={"animate"}
+              viewport={{ once: true }}
+            >
               <h1 className="text-left font-nunito text-[42px] font-semibold leading-16">
                 Questions about your data security?
               </h1>
@@ -40,9 +77,9 @@ export function Section_three() {
                 and protect your data, feel free to reach out to our Security
                 Team at security@vacineapp.com.
               </p>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

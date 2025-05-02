@@ -1,12 +1,12 @@
 import React from "react";
-import { useHoverCards } from "../../../utils/motions/MotionHooks/useHoverCards";
 import { motion } from "framer-motion";
+import useHoverButton from "../../../utils/motions/MotionHooks/useHoverButton";
 interface CardProp {
   children: React.ReactNode;
   style?: string;
 }
 export default function Card({ style, children }: CardProp) {
-  const hoverCards = useHoverCards();
+  const hoverCards = useHoverButton();
 
   return (
     <>

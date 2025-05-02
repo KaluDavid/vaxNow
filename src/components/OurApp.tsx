@@ -28,7 +28,7 @@ export function OurApp({ style, img, alt }: OurAppProps) {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className={`relative w-[378px] h-[200px]  bg-blue-600 rounded-tl-3xl rounded-br-3xl rounded-tr-[100px] rounded-bl-[100px] ${style}`}
+          className={`relative sm:w-[378px] h-[200px] sm-lg:w-[358px] sm-sm:w-[340px] w-[300px]  bg-blue-600 rounded-tl-3xl rounded-br-3xl rounded-tr-[100px] rounded-bl-[100px] ${style}`}
         ></motion.div>
         <motion.fieldset
           variants={phoneVaraint}

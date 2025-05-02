@@ -14,19 +14,12 @@ export default function Get_Started() {
 
   return (
     <>
-      <motion.section className="bg-white w-full overflow-x-hidden hide-scrollbar ">
-        <motion.div
-          initial={{ opacity: 0, x: -100, scale: 0.8 }}
-          animate={{ opacity: 1, x: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeInOut" }}
-          drag
-        >
-          <Header />
-        </motion.div>
+      <motion.section className="bg-white w-full  overflow-x-hidden hide-scrollbar ">
+        <Header />
 
         <section
           ref={toTop}
-          className="flex flex-col items-center justify-center gap-[100px]"
+          className="flex flex-col items-center mt-[5rem] justify-center gap-[100px]"
         >
           <Hero />
           <Section_Two />

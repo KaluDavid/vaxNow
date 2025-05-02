@@ -2,20 +2,28 @@ import React from "react";
 import useBackToTop from "../../Hooks/use-back-to-top";
 import useTitleChange from "../../Hooks/use-title-change";
 import { Terms } from "./Terms/Terms";
-
+import useScaleTop from "../../utils/motions/MotionHooks/useScaleTop";
+import { motion } from "framer-motion";
+import useRevealOnScroll from "../../utils/motions/MotionHooks/useRevealOnScroll";
 function Privacy_Policy() {
   // Title update on route change
   useTitleChange({ title: "Terms Of Service" });
   // back to top on page reload
   const toTop = useBackToTop();
+  const scaleFromTop = useScaleTop();
+  const reveal = useRevealOnScroll();
   return (
     <>
-      <section
+      <motion.section
         ref={toTop}
-        className="flex flex-col items-center justify-center pb-[5rem] text-blue-800"
+        {...reveal}
+        className="flex flex-col mt-[5rem] items-center justify-center pb-[5rem] text-blue-800"
       >
-        <div className="flex text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full px-[100px] text-blue-800  overflow-x-hidden relative py-[7rem] overflow-hidden">
-          <div className="flex items-center flex-col gap-6">
+        <div className="flex text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full px-[100px] text-blue-800  overflow-x-hidden relative py-[7rem] overflow-hidden ">
+          <motion.div
+            {...scaleFromTop}
+            className="flex items-center flex-col gap-6 !text-white"
+          >
             <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
               Privacy Policy
             </h1>
@@ -28,7 +36,7 @@ function Privacy_Policy() {
               and safeguard your information while providing you with seamless
               vaccination tracking and health record services.
             </span>
-          </div>
+          </motion.div>
         </div>
         <div className="grid grid-cols-2 gap-8 pt-20 px-20 items-start justify-start ">
           <Terms head="Information We Collect">
@@ -113,7 +121,7 @@ function Privacy_Policy() {
             </span>
           </Terms>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

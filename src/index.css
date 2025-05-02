@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oleo+Script:wght@400;700&display=swap");
-
 @import "tailwindcss";
 
 @theme {
@@ -36,6 +35,21 @@
   /* BOX SHADOW */
   --shadow-soft-lg: 0px 4px 6px 0px rgba(184, 181, 181, 0.25);
   --shadow-purchase: 0px 0px 10px 2px rgba(255, 255, 255, 0.32);
+
+  --default-transition-timing-function-spring: "cubic-bezier(0.4, 0.0, 0.2, 1)";
+
+  /* BreakPoint */
+  --breakpoint-sm-sm: 375px;
+  --breakpoint-mid-sm: 400px;
+  --breakpoint-sm-lg: 425px;
+  --breakpoint-sm-xl: 500px;
+  --breakpoint-lgPX: 1025px;
+  --breakpoint-xlPX: 1090px;
+  /* --breakpoint-md: 769px; */
+  --breakpoint-mid-md: 769px;
+  /* --breakpoint-lg: 1025px; */
+  /* --breakpoint-xl: 1281px; */
+  --breakpoint-xxl: 1440px;
 }
 
 @font-face {

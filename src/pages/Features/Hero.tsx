@@ -14,16 +14,16 @@ export function Hero() {
 
   return (
     <>
-      <section className="flex items-center justify-between w-full px-[100px] text-blue-800  overflow-x-hidden">
+      <section className="flex-col lg:flex-row flex items-center lg:pt-[100px] pt-[20px] max-lg:gap-[100px]  justify-between w-full max-sm:px-[20px] px-[50px] min-[1270px]:px-[100px]  sm:max-min-[1279px]:px-[50px] text-blue-800  overflow-x-hidden  ">
         <motion.div
           {...scaleFromTop}
           className="flex flex-col items-start text-left"
         >
-          <div className="flex w-[40rem] items-start flex-col gap-6">
-            <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
+          <div className="flex lg:w-[40rem] w-full items-start flex-col gap-6">
+            <h1 className="font-nunito font-bold text-[32px] sm:text-[56px] leading-[130%] tracking-[-0.28px] ">
               Track, Manage, Protect All in one place
             </h1>
-            <span className="text-xl font-normal tracking-[-0.1px] w-[490px] leading-8">
+            <span className="sm:text-xl text-lg font-normal tracking-[-0.1px] lg:w-[490px] leading-8">
               With ImmuniSafe, you have access to vital health services at your
               fingertips, ensuring better care, timely reminders, and reliable
               records wherever you are.
@@ -45,11 +45,11 @@ export function Hero() {
           }}
           className="rounded-tl-[250px] rounded-sm bg-blue-50 "
         >
-          <fieldset className="w-full h-full flex items-end justify-end object-contain pt-[49px] pl-[114px]">
+          <fieldset className="max-w-full h-full flex items-end justify-end object-contain pt-[49px] pl-[114px] ">
             <img
               src="/public/assets/Features_img/hand.png"
               alt=""
-              className=" object-fill"
+              className="max-w-full object-fill lg:min-w-[350px] md:max-lg:max-w-[590px] "
             />
           </fieldset>
         </motion.div>

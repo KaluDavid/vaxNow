@@ -15,12 +15,15 @@ export function DropDown({ text, children, article }: DropDown) {
     <>
       <motion.div
         variants={child}
-        className="flex flex-col gap-2.5 items-center py-7.5 pl-6 pr-10  bg-blue-50 rounded-lg text-lg font-nunito font-semibold text-blue-800 cursor-pointer w-full"
+        className="flex flex-col gap-2.5 items-center sm:py-7.5 sm:pl-6 sm:pr-10 py-[24px] px-[14px]  bg-blue-50 rounded-lg text-lg font-nunito font-semibold text-blue-800 cursor-pointer w-full"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="flex items-start justify-between w-full">
+        <div className="flex items-start justify-between w-full max-sm:text-base">
           <p>{text} </p>
-          {isOpen ? <BiMinus /> : <BiPlus />}
+          <span className="max-sm:text-lg">
+            {" "}
+            {isOpen ? <BiMinus /> : <BiPlus />}
+          </span>
         </div>
         {isOpen && (
           <article className="font-normal text-base leading-7">

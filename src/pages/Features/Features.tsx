@@ -19,7 +19,7 @@ export default function Features() {
     <>
       <section
         ref={toTop}
-        className="flex flex-col items-center justify-center gap-[100px] py-[5rem]"
+        className="flex mt-[5rem] w-full flex-col items-center justify-center gap-[50px] lg:gap-[100px] py-[5rem]"
       >
         <Hero />
         <Section_two />

@@ -9,7 +9,7 @@ interface DownloadProps {
 export function Download({ button, playstore }: DownloadProps) {
   return (
     <>
-      <div className="flex items-center justify-between gap-8 w-full">
+      <div className="flex flex-col sm-xl:flex-row items-start  sm:items-center justify-between gap-8 w-full">
         <motion.span
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

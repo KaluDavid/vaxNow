@@ -34,7 +34,7 @@ export default function LeftRight({
     <>
       <motion.section
         {...scrollIn}
-        className={`${background} py-[150px] px-[150px] flex items-center justify-between gap-[88px]`}
+        className={`${background} sm:px-[50px] gap-[220px] xl:px-[150px] px-[20px] lg:flex-row flex-col flex items-center justify-between lg:gap-[88px] pb-[10rem] `}
       >
         <motion.span
           variants={slideFromLeft}

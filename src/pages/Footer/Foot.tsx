@@ -20,18 +20,18 @@ export function Foot() {
 
   return (
     <>
-      <footer className="w-full text-white rounded-tr-[300px] rounded-tl-3xl bg-blue-600 bg-[url('/public/assets/virus.png')] pb-10 pt-[100px] px-[80px] flex items-start flex-col justify-start gap-[88px]">
+      <footer className="w-full text-white sm:rounded-tr-[300px] rounded-tr-[200px] rounded-tl-3xl bg-blue-600 bg-[url('/public/assets/virus.png')] pb-10 pt-[100px] xl:px-[80px] sm:px-[50px] px-[20px] flex items-start flex-col justify-start gap-[88px]">
         <motion.div
           variants={parent}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex w-full items-start justify-between "
+          className="flex sm:flex-row sm:flex-wrap flex-col gap-[50px] w-full items-start justify-between "
         >
           <motion.div
             variants={child}
             viewport={{ once: true }}
-            className="flex gap-13.5 flex-col"
+            className="flex sm:gap-13.5 gap-[20px] flex-col"
           >
             <Link to="">
               <fieldset>
@@ -107,7 +107,7 @@ export function Foot() {
           className="flex w-full flex-col items-center gap-8"
         >
           <motion.hr {...onWiden} className="h-[1px] bg-white w-full" />
-          <h3 className="font-nunito-sans text-xl font-normal">
+          <h3 className="font-nunito-sans text-xl font-normal text-center sm:text-left">
             Copyright @Vaxnow 2025. All right reserved
           </h3>
         </motion.div>

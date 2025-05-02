@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { childStagger } from "../../../utils/motions/motionVariants";
 interface CardsProps {
   img: string;
   heading: string;
@@ -13,9 +15,16 @@ const articleStyle = {
 };
 export function Cards({ img, heading, children }: CardsProps) {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
+  const child = childStagger();
   return (
     <>
-      <div className="flex flex-col text-left border border-card rounded-2xl  w-[395px] rounded-tr-[200px] ">
+      <motion.div
+        variants={child}
+        initial={"hidden"}
+        whileInView={"visible"}
+        className="flex flex-col text-left border border-card rounded-2xl  w-[395px] rounded-tr-[200px] "
+      >
         <fieldset className="w-full *:rounded-tl-2xl *:rounded-tr-[200px]">
           <img src={img} alt="article images" className="w-auto" />
         </fieldset>
@@ -33,7 +42,7 @@ export function Cards({ img, heading, children }: CardsProps) {
             {isExpanded ? "Read Less" : "Read More"}
           </span>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

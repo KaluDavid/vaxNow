@@ -9,15 +9,14 @@ import { motion } from "framer-motion";
 import {
   fadeIn,
   slideInLeftRight,
-  slideInRightLeft,
 } from "../../../utils/motions/motionVariants";
+import WordAnime from "../../../utils/motions/WordAnime";
 function DownloadApp() {
   useTitleChange({ title: "Terms Of Service" });
   // back to top on page reload
   const toTop = useBackToTop();
 
   const fade = fadeIn();
-  const slideRight = slideInRightLeft();
   const slideLeft = slideInLeftRight();
   return (
     <>
@@ -26,7 +25,7 @@ function DownloadApp() {
         className="bg-white w-full overflow-x-hidden hide-scrollbar "
       >
         <Header />
-        <section className="flex flex-col items-center justify-center pb-[5rem] text-blue-800">
+        <section className="flex mt-[5rem] flex-col items-center justify-center pb-[5rem] text-blue-800">
           <motion.div
             variants={fade}
             initial={"hidden"}
@@ -44,24 +43,27 @@ function DownloadApp() {
               transition={{ duration: 1 }}
               className="flex flex-col items-start gap-10 text-blue-800"
             >
-              <h3 className="font-semibold text-5xl font-nunito leading-[62px] flex items-center gap-[20px]">
-                <motion.span
-                  variants={slideLeft}
-                  initial="initial"
-                  whileInView="animate"
-                  viewport={{ once: true }}
-                >
-                  🛠️
-                </motion.span>
-                <motion.span
+              <span className="flex items-center gap-4 whitespace-nowrap">
+                {" "}
+                <h3 className="font-semibold text-5xl font-nunito leading-[62px] flex items-center gap-[20px]">
+                  <motion.span
+                    variants={slideLeft}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                  >
+                    🛠️
+                  </motion.span>
+                </h3>
+                {/* <motion.span
                   variants={slideRight}
                   initial="initial"
                   whileInView="animate"
                   viewport={{ once: true }}
-                >
-                  We're still building...
-                </motion.span>
-              </h3>
+                > */}
+                <WordAnime text="We're still building..." />
+                {/* </motion.span> */}
+              </span>
 
               <p className="text-xl font-normal leading-[30px] w-full">
                 We're currently putting the finishing touches on the VaxNow App

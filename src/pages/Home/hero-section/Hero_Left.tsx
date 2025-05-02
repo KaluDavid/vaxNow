@@ -11,9 +11,13 @@ export function Hero_Left() {
         className="flex flex-col items-start text-left"
       >
         <div className="flex items-start flex-col gap-6">
-          <h1 className="font-nunito [&_span]:text-blue-600 font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
-            Never miss a vaccine dose. Your <span>Vaccination tracker</span> and
-            reminder
+          <h1 className="font-nunito [&_span]:text-blue-600  font-bold text-nowrap text-[56px] leading-[130%] tracking-[-0.28px] ">
+            Never miss a vaccine <br /> dose. Your
+            <span>
+              Vaccination <br />
+              tracker
+            </span>
+            and reminder
           </h1>
           <span className="text-xl font-normal tracking-[-0.1px] w-[433px] leading-8">
             A comprehensive health management tool that goes beyond traditional
@@ -36,7 +40,7 @@ export function Hero_Left() {
               <p className="text-gray-900 text-xl font-bold font-nunito ">
                 Approved by
               </p>
-              <fieldset className="flex items-center gap-6">
+              <fieldset className="flex items-center gap-6 ">
                 <img
                   src="/assets/home_img/NGHealth.svg"
                   alt="ministry of health"

@@ -15,7 +15,7 @@ export function Button({ children, style, to, HandleClick }: ButtonProps) {
       <Link to={to} onClick={HandleClick}>
         <motion.button
           {...hoverScale}
-          className={`flex flex-nowrap text-nowrap bg-blue-600 rounded-lg w-full  items-center justify-center gap-1.5 text-white text-xl  p-[15px] px-[30px] font-semibold cursor-pointer ${style}`}
+          className={`flex flex-nowrap text-nowrap bg-blue-600 rounded-lg w-full  items-center justify-center gap-1.5 text-white text-xl text-lg  p-[15px] px-[30px]  font-semibold cursor-pointer ${style}`}
         >
           {children}
         </motion.button>

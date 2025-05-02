@@ -3,6 +3,7 @@ import { User } from "./User";
 import { parentStagger } from "../../../utils/motions/motionVariants";
 import { motion } from "framer-motion";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
+import WordAnime from "../../../utils/motions/WordAnime";
 
 export function Section_six() {
   const parent = parentStagger();
@@ -14,9 +15,10 @@ export function Section_six() {
           {...scrollIn}
           className="text-white flex-col text-center flex items-center justify-center gap-2"
         >
-          <h1 className="  font-nunito text-5xl font-semibold leading-16">
-            Hear from our satisfied users
-          </h1>
+          <WordAnime
+            text="Hear from our satisfied users"
+            style="!text-5xl font-semibold"
+          />
           <h3 className="font-nunito-sans text-2xl font-normal">
             Discover how ImmuniSafe is transforming lives
           </h3>

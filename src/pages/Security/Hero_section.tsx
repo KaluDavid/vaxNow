@@ -1,12 +1,32 @@
 import React from "react";
 import { Download } from "../../components/Download";
+import { delay, motion } from "framer-motion";
+import useScaleTop from "../../utils/motions/MotionHooks/useScaleTop";
+
+const entryVariants = {
+  hidden: { opacity: 0, y: 100 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: 0.3,
+      ease: "easeInOut",
+    },
+  },
+};
 
 export function Hero_section() {
+  const scaleFromTop = useScaleTop();
+
   return (
     <>
       <div className="flex items-center justify-between w-full px-[100px] text-blue-800  overflow-x-hidden">
         <div className="flex flex-col items-start text-left">
-          <div className="flex w-[40rem] items-start flex-col gap-6">
+          <motion.div
+            {...scaleFromTop}
+            className="flex w-[40rem] items-start flex-col gap-6"
+          >
             <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
               Protected with the Highest Standards
             </h1>
@@ -18,12 +38,18 @@ export function Hero_section() {
             <div className="flex items-start  flex-col">
               <Download playstore="*:text-blue-800 bg-gray-100" />
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <fieldset className="*:size-full *:object-contain items-center">
+        <motion.fieldset
+          variants={entryVariants}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true }}
+          className="*:size-full *:object-contain items-center"
+        >
           <img src="/assets/security/protected.png" alt="protected" />
-        </fieldset>
+        </motion.fieldset>
       </div>
     </>
   );

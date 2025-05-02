@@ -1,12 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
-import {
-  slideInLeftRight,
-  slideInRightLeft,
-} from "../../../utils/motions/motionVariants";
+import { slideInRightLeft } from "../../../utils/motions/motionVariants";
 import { DownloadAppContent } from "../../../components/DownloadAppContent";
 import { OurApp } from "../../../components/OurApp";
+import useWindowWidth from "../../../Hooks/use-window-width";
+import { SlideRightLeftOurApp } from "./SlideRightLeftOurApp";
 
 export default function RightLeft({
   background,
@@ -28,22 +27,18 @@ export default function RightLeft({
   alt: string;
 }) {
   const scrollIn = useRevealOnScroll();
-  const slideFromLeft = slideInLeftRight();
   const slideFromRight = slideInRightLeft();
+
+  const { windowWidth } = useWindowWidth();
   return (
     <>
       <motion.section
         {...scrollIn}
-        className={`${background} py-[150px] px-[150px] flex items-center justify-between gap-[88px]`}
+        className={`${background} lg:px-[50px] lg:py-[150px] xl:px-[100px] sm:px-[50px] lg:flex-row flex-col flex items-center justify-between  lg:gap-[88px] gap-[220px] py-[50px] pb-[13rem] px-[20px]`}
       >
-        <motion.span
-          variants={slideFromLeft}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
-          <OurApp img={img} style={style2} alt={alt} />
-        </motion.span>
+        {windowWidth > 768 && (
+          <SlideRightLeftOurApp img={img} style2={style2} alt={alt} />
+        )}
         <motion.span
           variants={slideFromRight}
           initial="initial"
@@ -58,6 +53,10 @@ export default function RightLeft({
             article={article}
           />
         </motion.span>
+
+        {windowWidth <= 768 && (
+          <SlideRightLeftOurApp img={img} style2={style2} alt={alt} />
+        )}
       </motion.section>
     </>
   );

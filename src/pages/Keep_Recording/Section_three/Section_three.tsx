@@ -17,7 +17,7 @@ export function Section_three() {
     <>
       <motion.div
         {...reveal}
-        className="flex text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center gap-0 bg-cover justify-between w-full px-[100px] text-blue-800 py-[100px] overflow-x-hidden"
+        className="flex lg:flex-row flex-col gap-[48px] text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center gap-0 bg-cover justify-between w-full xl:px-[100px] sm:px-[50px] text-blue-800 lg:py-[100px] py-[50px] px-[20px] overflow-x-hidden"
       >
         <motion.div
           variants={slideBottom}
@@ -27,10 +27,10 @@ export function Section_three() {
           className="flex flex-col items-start text-left"
         >
           <div className="flex items-start flex-col gap-6">
-            <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
+            <h1 className="font-nunito font-bold sm:text-[56px] sm:leading-[130%] text-[32px] leading-[41px] tracking-[-0.28px] ">
               Easy sharing with doctors
             </h1>
-            <span className="text-xl font-normal tracking-[-0.1px] w-[490px] leading-8">
+            <span className="sm:text-xl text-lg font-normal tracking-[-0.1px] lg:w-[490px] leading-8">
               Connect with qualified doctors for personalized consultations.
               Your conversations with doctors are strictly confidential.
             </span>
@@ -47,6 +47,7 @@ export function Section_three() {
           <img
             src="/public/assets/Record_keeping/sharing_with_doctors.png"
             alt="sharing_with_doctors"
+            className=" md:min-w-[450px]  object-cover"
           />
         </motion.fieldset>
       </motion.div>

@@ -20,17 +20,17 @@ export function Hero() {
     <>
       <motion.div
         {...reveal}
-        className="flex text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-between w-full px-[100px] text-blue-800 py-[100px] overflow-x-hidden "
+        className="flex-col lg:flex-row flex text-white bg-blue-600 max-lg:gap-[100px]  bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-between w-full  text-blue-800 py-[100px] overflow-x-hidden max-sm:px-[20px] px-[50px] min-[1270px]:px-[100px]  sm:max-min-[1279px]:px-[50px]"
       >
         <motion.div
           {...scaleFromTop}
           className="flex !text-white flex-col items-start text-left"
         >
-          <div className="flex w-[40rem] items-start flex-col gap-6">
-            <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
+          <div className="flex lg:w-[40rem] items-start flex-col gap-6">
+            <h1 className="font-nunito font-bold text-[32px] sm:text-[56px] leading-[130%] tracking-[-0.28px] ">
               Your health history At your fingertips
             </h1>
-            <span className="text-xl font-normal tracking-[-0.1px] w-[490px] leading-8">
+            <span className="sm:text-xl text-lg font-normal tracking-[-0.1px] lg:w-[490px] leading-8">
               Store all your vital health information in one secure place.
               Retrieve your records anytime, anywhere, with just a few taps.
             </span>
@@ -55,11 +55,11 @@ export function Hero() {
           }}
           className="relative"
         >
-          <fieldset className=" object-fill flex w-[500px] pt-[66px] px-[89px] pb-[53px] items-end justify-end bg-white rounded-full ">
+          <fieldset className=" object-fill flex w-full sm-xl:p-[16rem] sm-lg:p-[13rem] sm-sm:p-[11rem] p-[10rem] items-end justify-end bg-white rounded-full relative">
             <img
               src="/public/assets/Record_keeping/Vaccine Tracker.png"
               alt="vaccine tracker"
-              className=" rounded-t-[35px] border-[#002F56] border-x-[10px] border-t-[10px] object-fill h-[25rem] mr-[5.5%] rounded-b-[13px] mb-[-16px]"
+              className="sm-xl:w-[290px]  sm-xl:right-30  sm-lg:w-[240px] sm-sm:w-[200px] w-[190px] bottom-8 sm-lg:right-23 rounded-t-[35px] sm-sm:right-18 right-16 border-[#002F56] border-x-[10px] border-t-[10px] object-fill  rounded-b-[13px] absolute"
             />
           </fieldset>
           <motion.div
@@ -69,29 +69,29 @@ export function Hero() {
               transition: { staggerChildren: 0.25, duration: 0.8, delay: 0.9 },
             }}
             viewport={{ once: true }}
-            className="flex items-end justify-end flex-col [&_span]:rounded-full [&_span]:flex [&_span]:items-center [&_span]:justify-center  absolute mt-[-14rem]  ml-[-1rem]"
+            className="flex items-end justify-end flex-col [&_span]:rounded-full [&_span]:flex [&_span]:items-center [&_span]:justify-center  absolute sm-xl:mt-[-14rem] mt-[-12rem] sm-xl:ml-[-1rem] sm:ml-[-2rem] sm-lg:ml-[1.5rem]"
           >
             <motion.span
               variants={child}
-              className="w-[100px] text-[50px] h-[100px] bg-blue-900 z-20 "
+              className="sm-xl:size-[100px] sm-xl:text-[50px] text-[35px] size-[80px] bg-blue-900 z-20 max-sm-xl:ml-[-10rem] mr-[1.5rem]"
             >
               <MdLock />
             </motion.span>
             <motion.span
               variants={child}
-              className="w-20 text-5xl p-6.5 h-20 bg-red-600 mt-[-1.2rem] mr-[-1rem]"
+              className="sm-xl:size-20  sm-xl:text-5xl  text-2xl sm-xl:p-6.5 p-5 bg-red-600 sm-xl:mt-[-1.2rem] sm-xl:mr-[-1rem] sm-lg:mt-[-0.5rem] sm-lg:ml-[-1.5rem] mt-[-1rem] mr-[1rem]"
             >
               <MdOutlineSecurity />
             </motion.span>
             <motion.span
               variants={child}
-              className="w-[60px] h-[60px] p-5 bg-pink-500 text-[40px]  rotate-180 mr-[-3rem] mt-[-1.3rem]"
+              className="sm-xl:size-[60px] sm-xl:p-5 bg-pink-500 sm-xl:text-[40px] size-14 text-xl p-3 rotate-180 sm-xl:mr-[-3rem] sm-xl:mt-[-1.3rem] sm-lg:mr-[-1.5rem] sm-lg:mt-[-1rem] sm-lg:mt-[-1.5rem] mt-[-1rem]"
             >
               <BsCloudUploadFill />
             </motion.span>
             <motion.span
               variants={child}
-              className="bg-orange-400 text-[32px] p-3.5 w-[50px] h-[50px] z-10 mr-[-5rem] mt-[-1.5rem]"
+              className="bg-orange-400 sm-xl:text-[32px] text-[20px] sm-xl:p-3.5 p-2.5 sm-xl:size-[50px] size-[40px] z-10 sm-xl:mr-[-5rem] sm-xl:mt-[-1.5rem] sm-lg:mr-[-3rem] sm-lg:mt-[-2rem] mt-[-1.5rem] mr-[-1.2rem]"
             >
               <MdAddToDrive />
             </motion.span>

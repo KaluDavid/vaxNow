@@ -15,7 +15,7 @@ export default function Security() {
     <>
       <section
         ref={toTop}
-        className="flex flex-col items-center justify-center py-[5rem] gap-[100px]"
+        className="flex mt-[5rem] flex-col items-center justify-center py-[5rem] gap-[100px]"
       >
         <Hero_section />
         <Section_two />

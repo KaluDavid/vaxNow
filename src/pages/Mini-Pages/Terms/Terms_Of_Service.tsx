@@ -2,22 +2,36 @@ import React from "react";
 import useBackToTop from "../../../Hooks/use-back-to-top";
 import useTitleChange from "../../../Hooks/use-title-change";
 import { Terms } from "./Terms";
-
+import { motion } from "framer-motion";
+import { revealFromBottom } from "../../../utils/motions/motionVariants";
+import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
 function Terms_Of_Service() {
   // Title update on route change
   useTitleChange({ title: "Terms Of Service" });
   // back to top on page reload
   const toTop = useBackToTop();
+
+  const fromBottom = revealFromBottom();
+  const reveal = useRevealOnScroll();
+
   return (
     <>
       <section
         ref={toTop}
-        className="flex flex-col items-center justify-center pb-[5rem] text-blue-800"
+        className="flex mt-[7rem]  flex-col items-center justify-center pb-[5rem] text-blue-800"
       >
-        <fieldset>
+        <motion.fieldset
+          variants={fromBottom}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <img src="/public/assets/term.png" alt="terms of service" />
-        </fieldset>
-        <div className="grid grid-cols-2 gap-8 pt-10 px-20 items-start justify-start ">
+        </motion.fieldset>
+        <motion.div
+          {...reveal}
+          className="grid grid-cols-2 gap-8 pt-10 px-20 items-start justify-start "
+        >
           <Terms head="1. Introduction">
             <span>
               Welcome to VaxNow! These Terms of Service ("Terms") govern your
@@ -110,7 +124,7 @@ function Terms_Of_Service() {
               support@vaxnow.com.
             </span>
           </Terms>
-        </div>
+        </motion.div>
       </section>
     </>
   );

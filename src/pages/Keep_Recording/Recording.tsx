@@ -17,7 +17,7 @@ export default function Recording() {
     <>
       <section
         ref={toTop}
-        className="flex flex-col items-center justify-center gap-[100px] pb-[5rem]"
+        className="flex mt-[5rem] flex-col items-center justify-center gap-[100px] pb-[5rem]"
       >
         <Hero />
         <Section_two />

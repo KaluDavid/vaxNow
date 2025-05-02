@@ -17,13 +17,14 @@ export function Section_Two() {
   const revealOnScroll = useRevealOnScroll();
   return (
     <>
-      <motion.section {...revealOnScroll} className="mx-[50px] mb-[12rem]">
+      {/* mx-[50px] */}
+      <motion.section {...revealOnScroll} className=" px-[50px] mb-[12rem]">
         <div className="flex items-center flex-col justify-between w-full  h-[29rem] bg-blue-600 rounded-tr-[200px] rounded-2xl bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat px-16 gap-14">
           <motion.h1
             variants={wordVariant}
             initial="hidden"
             animate="visible"
-            className="text-snow text-center font-nunito text-5xl font-semibold pt-10 leading-16"
+            className="text-snow text-center font-nunito !text-5xl font-semibold pt-10 leading-16"
           >
             A centralized platform for managing your medications and
             vaccinations.

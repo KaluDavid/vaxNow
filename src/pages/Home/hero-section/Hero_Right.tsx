@@ -6,7 +6,7 @@ import { useReducedMotion } from "framer-motion";
 
 const entryVariants = {
   hidden: { opacity: 0, x: "100vh" },
-  visible: { opacity: 1, x: "-100px" },
+  animate: { opacity: 1, x: "-100px" },
 };
 
 const container = {
@@ -26,7 +26,7 @@ const child = {
     transition: {
       duration: 0.5,
       ease: "easeInOut",
-      repeat: Infinity, // 👈 valid here!
+      repeat: Infinity,
       repeatType: "mirror", // makes it pulse back
     },
   },
@@ -40,7 +40,7 @@ export function Hero_Right() {
         <motion.div
           variants={entryVariants}
           initial="hidden"
-          animate={shouldReducedMotion ? {} : "visible"}
+          animate={shouldReducedMotion ? {} : "animate"}
           transition={{
             duration: 1,
             ease: "easeInOut",
@@ -58,15 +58,17 @@ export function Hero_Right() {
             text="1000+ Health Centres"
           />
         </motion.div>
-        <motion.img
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: -0 }}
-          transition={{ duration: 1 }}
-          src="/assets/home_img/fam4.png"
-          alt="family picture"
-          className="w-[85rem] h-auto object-contain border-[12px] rounded-tl-[33px] border-blue-50 rounded-br-[33px] rounded-bl-[200px] rounded-tr-[200px]  will-change-transform "
-        />
 
+        <fieldset className="relative max-w-[526px] ">
+          <motion.img
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: -0 }}
+            transition={{ duration: 1 }}
+            src="/assets/home_img/fam4.png"
+            alt="family picture"
+            className=" size-auto object-contain border-[12px] md:shrink-0  rounded-tl-[33px] border-blue-50 rounded-br-[33px] rounded-bl-[200px] rounded-tr-[200px]  will-change-transform"
+          />
+        </fieldset>
         <motion.div
           variants={entryVariants}
           initial="hidden"
@@ -77,7 +79,7 @@ export function Hero_Right() {
             delay: 0.3,
           }}
           exit={{ opacity: 1 }}
-          className="shadow-soft-lg flex  gap-2 flex-col rounded-sm bg-white justify-center pl-3 pr-4 py-3 pb-2 font-semibold font-nunito absolute ml-[40%] mb-[-25%] "
+          className="shadow-soft-lg flex  gap-2 flex-col rounded-sm bg-white justify-center pl-3 pr-4 py-3 pb-2 font-semibold font-nunito absolute overflow-hidden mr-[-43%] mb-[-20%]"
         >
           <div className="flex  items-center gap-2">
             <img
@@ -88,9 +90,9 @@ export function Hero_Right() {
             <span>Helen Jacobs</span>
           </div>
           <div className="flex items-center gap-2 flex-col">
-            <p className="font-light text-[13px] leading-4 w-[225px]">
-              I used to struggle to keep track of all my medications and
-              vaccinations. Now, it's all in one place
+            <p className="font-light text-[13px] leading-4 ">
+              I used to struggle to keep track of all <br /> my medications and
+              vaccinations. Now, <br /> it's all in one place
             </p>
             <motion.fieldset
               variants={container}

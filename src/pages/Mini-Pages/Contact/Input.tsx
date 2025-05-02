@@ -1,5 +1,6 @@
 import React from "react";
-
+import { childStagger } from "../../../utils/motions/motionVariants";
+import { motion } from "framer-motion";
 export function Input({
   label,
   type,
@@ -11,8 +12,15 @@ export function Input({
   textArea?: React.ReactNode;
   placeholder: string;
 }) {
+  const child = childStagger();
   return (
-    <div className="flex flex-col text-xl font-normal tracking-[-0.1px] w-full leading-8">
+    <motion.div
+      variants={child}
+      initial="hidden"
+      whileInView={"visible"}
+      viewport={{ once: true }}
+      className="flex flex-col text-xl font-normal tracking-[-0.1px] w-full leading-8"
+    >
       <label htmlFor={type}>{label}</label>
       {textArea ? (
         /* Textarea 1 */
@@ -29,6 +37,6 @@ export function Input({
           className="w-[420px] h-11 pl-4 text-base font-normal rounded-xl border border-input outline-gray-400 placeholder:text-input"
         />
       )}
-    </div>
+    </motion.div>
   );
 }

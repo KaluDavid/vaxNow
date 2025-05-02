@@ -5,7 +5,7 @@ import { Hero_Right } from "./Hero_Right";
 export function Hero_Section() {
   return (
     <>
-      <div className="flex items-center justify-center px-[100px] text-blue-800 ] overflow-x-hidden">
+      <div className="  flex items-center justify-center text-blue-800 gap-[66px] overflow-x-hidden">
         <Hero_Left />
         <Hero_Right />
       </div>

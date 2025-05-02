@@ -1,15 +1,30 @@
 import React from "react";
 import { Cards } from "./Cards";
+import { motion } from "framer-motion";
+import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
+import WordAnime from "../../../utils/motions/WordAnime";
+import { parentStagger } from "../../../utils/motions/motionVariants";
 
 export function Section_three() {
+  const scaleIn = useRevealOnScroll();
+  const parent = parentStagger();
   return (
     <>
-      <div className="flex flex-col mb-[100px] py-20 bg-blue-50 bg-[url('/public/assets/Vaccine_education/ArticlesBG.svg')] items-center bg-cover justify-between w-full  text-blue-800 gap-[60px] text-center overflow-x-hidden">
-        <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
-          Read up our latest articles
-        </h1>
-
-        <div className="grid grid-cols-3 gap-10  ">
+      <motion.div
+        {...scaleIn}
+        className="flex flex-col mb-[100px] py-20 bg-blue-50 bg-[url('/public/assets/Vaccine_education/ArticlesBG.svg')] items-center bg-cover justify-between w-full  text-blue-800 gap-[60px] text-center overflow-x-hidden"
+      >
+        {/* <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
+          
+        </h1> */}
+        <WordAnime text="Read up our latest articles" />
+        <motion.div
+          variants={parent}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: true }}
+          className="grid grid-cols-3 gap-10"
+        >
           <Cards
             img="/public/assets/Vaccine_education/img1.png"
             heading="Importance of childhood immunization"
@@ -136,8 +151,8 @@ export function Section_three() {
             emergency situations, safeguarding their children’s health at all
             times.
           </Cards>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 }

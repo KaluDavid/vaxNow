@@ -2,21 +2,21 @@ import React from "react";
 import useBackToTop from "../../Hooks/use-back-to-top";
 import useTitleChange from "../../Hooks/use-title-change";
 import { Terms } from "./Terms/Terms";
-
+import { motion } from "framer-motion";
+import WordAnime from "../../utils/motions/WordAnime";
 function Copy_Right() {
   // Title update on route change
   useTitleChange({ title: "Copy Right" });
   // back to top on page reload
   const toTop = useBackToTop();
+
   return (
     <>
       <section
         ref={toTop}
-        className="flex flex-col items-center justify-center pb-[5rem] text-blue-800"
+        className="mt-[5rem]  flex flex-col items-center justify-center pb-[5rem] text-blue-800 py-20"
       >
-        <h1 className="font-nunito py-20 font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
-          Copyright Policy{" "}
-        </h1>
+        <WordAnime text="Copyright Policy" />
         <div className="grid grid-cols-2 gap-8 pt-20 px-20 items-start justify-start ">
           <Terms head="Ownership of Content">
             <span>

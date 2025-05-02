@@ -17,7 +17,7 @@ export function FAQ() {
     <>
       <motion.section
         {...reveal}
-        className="w-full flex items-start m-0 px-[90px] gap-[148px]"
+        className="w-full flex flex-col sm:flex-row max-sm:gap-[80px] items-start m-0 md:px-[50px] xl:px-[90px] px-[20px] lg:gap-[148px]"
       >
         <motion.span
           variants={slideLeft}
@@ -26,7 +26,8 @@ export function FAQ() {
           viewport={{ once: true }}
         >
           <DownloadAppContent
-            style="gap-[10px]"
+            style="gap-[10px] "
+            headStyle="max-sm:text-5xl"
             width="full"
             heading="FAQs"
             article="Answers to frequently asked questions"
