@@ -22,17 +22,17 @@ function FAQ_Page() {
       <motion.section
         ref={toTop}
         {...scaleIn}
-        className="flex mt-[5rem] pt-[20px] flex-col items-center justify-center gap-[100px] pb-[5rem]"
+        className="flex pt-[5rem] flex-col items-center justify-center gap-[100px] pb-[5rem]"
       >
-        <div className="flex text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full px-[100px] text-blue-800  overflow-x-hidden relative py-[12rem] overflow-hidden">
+        <div className="flex text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full sm:px-[50px] px-5 xl:px-[100px] text-blue-800  overflow-x-hidden relative py-[5rem] xl:py-[12rem] overflow-hidden sm:text-center text-left">
           <div className="flex items-center flex-col gap-6">
-            <WordAnime text=" Have Questions? We've Got Answers!" />
+            <WordAnime text="Have Questions? We've Got Answers!" />
             <motion.span
               variants={fromBottom}
               initial="hidden"
               whileInView={"visible"}
               viewport={{ once: true }}
-              className="text-xl font-normal tracking-[-0.1px] w-[76%] leading-8"
+              className="text-lg sm:text-xl font-normal tracking-[-0.1px] xl:w-[76%] leading-8"
             >
               Curious about how VaxNow works? Whether it's setting vaccine
               reminders, tracking multiple medications, or accessing your health
@@ -42,7 +42,7 @@ function FAQ_Page() {
             </motion.span>
           </div>
 
-          <fieldset className="flex  flex-col *:absolute *:last:top-[-45%]  *:last:left-0  *:last:rotate-180 *:first:top-0 *:first:right-0">
+          <fieldset className="flex  flex-col *:absolute *:last:top-[-45%] max-md:*:w-[200px] *:last:left-0  *:last:rotate-180 *:first:top-0 *:first:right-0">
             <motion.img
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
@@ -64,11 +64,14 @@ function FAQ_Page() {
 
         <FAQ />
 
-        <motion.div {...scaleIn} className="w-full px-[80px] flex items-center">
-          <div className="flex rounded-2xl items-center flex-col justify-between size-full bg-blue-600 pt-20 pb-24.5 bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat px-[85px]  gap-8 text-center ">
+        <motion.div
+          {...scaleIn}
+          className="w-full sm:px-[50px] px-5 xl:px-[80px] flex items-center"
+        >
+          <div className="flex rounded-2xl sm-sm:items-center flex-col justify-between size-full bg-blue-600 mb:pt-20 md:pb-24.5 py-10 bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat px-5 sm:px-[50px] md:px-[85px]  gap-8 text-center ">
             <WordAnime
               text="Still have questions?"
-              style="text-snow !text-5xl font-semibold leading-16"
+              style="text-snow text-5xl font-semibold leading-16"
             />
             <fieldset className="flex relative items-center *:first:*:bg-blue-50  *:first:*:text-blue-600">
               <Button to="/contact">Contact Us</Button>
@@ -81,9 +84,10 @@ function FAQ_Page() {
                     ease: "linear",
                   },
                 }}
+                viewport={{ once: true }}
                 src="/public/assets/arrow.svg"
                 alt="arrow"
-                className="w-30 mt-[-30px] absolute right-[-8rem]"
+                className="w-30 mt-[-30px] absolute sm:right-[-8rem] sm-sm:right-[-6rem] right-[-1rem]"
               />
             </fieldset>
           </div>

@@ -31,7 +31,7 @@ function Contact_Us() {
       <motion.section
         ref={toTop}
         {...reveal}
-        className="flex flex-col items-center justify-center gap-[100px] pb-[5rem]"
+        className="flex flex-col items-center justify-center gap-[100px] py-[5rem]"
       >
         <div className="flex pt-20 items-center flex-col gap-6">
           <div className="flex w-full justify-between">
@@ -64,9 +64,6 @@ function Contact_Us() {
           >
             <motion.span
               variants={child}
-              initial="hidden"
-              whileInView={"visible"}
-              viewport={{ once: true }}
               className="*:first:text-blue-600 *:first:text-xl"
             >
               <span>
@@ -76,9 +73,6 @@ function Contact_Us() {
             </motion.span>
             <motion.span
               variants={child}
-              initial="hidden"
-              whileInView={"visible"}
-              viewport={{ once: true }}
               className="*:first:text-blue-600 *:first:text-xl "
             >
               <span>
@@ -88,9 +82,6 @@ function Contact_Us() {
             </motion.span>
             <motion.span
               variants={child}
-              initial="hidden"
-              whileInView={"visible"}
-              viewport={{ once: true }}
               className="*:first:text-blue-600 *:first:text-xl"
             >
               <span>

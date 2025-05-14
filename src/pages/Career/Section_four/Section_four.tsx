@@ -14,14 +14,14 @@ export function Section_four() {
     <>
       <motion.section
         {...reveal}
-        className="flex items-start justify-between w-full  bg-blue-600  bg-[url('/public/assets/rolesVirus.svg')]  bg-center px-20 gap-[8rem] pt-28 pb-[62px] "
+        className="flex flex-col sm:flex-row items-start justify-between w-full  bg-blue-600  bg-[url('/public/assets/rolesVirus.svg')]  bg-center lg:px-20 sm:px-[50px] px-[20px] lg:gap-[8rem] max-sm:gap-[80px] lg:pt-28 py-[62px] "
       >
         <motion.div
           variants={parent}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: true }}
-          className="flex items-start gap-[92px] flex-col text-white font-nunito *:flex *:items-start *:flex-col *:first:gap-4"
+          className="flex items-start gap-10 lg:gap-[92px] flex-col text-white font-nunito *:flex *:items-start *:flex-col *:first:gap-4"
         >
           <motion.span
             variants={child}

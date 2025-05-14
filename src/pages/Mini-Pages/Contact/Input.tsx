@@ -27,14 +27,14 @@ export function Input({
         <textarea
           name={type}
           placeholder={placeholder}
-          className="w-[420px] placeholder:text-input h-[113px] py-2.5 px-3 outline-gray-400 text-base border border-input rounded-2xl"
+          className="min-md:w-[420px] w-full placeholder:text-input h-[113px] py-2.5 px-3 outline-gray-400 text-base border border-input rounded-2xl"
         ></textarea>
       ) : (
         <input
           type={type}
           name={type}
           placeholder={placeholder}
-          className="w-[420px] h-11 pl-4 text-base font-normal rounded-xl border border-input outline-gray-400 placeholder:text-input"
+          className="min-md:w-[420px] w-full h-11 pl-4 text-base font-normal rounded-xl border border-input outline-gray-400 placeholder:text-input"
         />
       )}
     </motion.div>

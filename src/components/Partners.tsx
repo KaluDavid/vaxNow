@@ -16,10 +16,10 @@ export function Partners() {
 
   return (
     <>
-      <section className="text-blue-600 flex-nowrap whitespace-nowrap w-full overflow-hidden px-[80px] flex items-center flex-col justify-center gap-[88px]">
+      <section className="text-blue-600 flex-nowrap whitespace-nowrap w-full overflow-hidden px-[20px] sm:px-[80px] flex items-center flex-col justify-center gap-[40px] sm:gap-[88px]">
         <motion.h1
           {...scrollIn}
-          className="  font-nunito text-5xl font-semibold leading-16"
+          className=" flex-wrap whitespace-normal font-nunito md:text-5xl text-center sm:text-left font-semibold sm:leading-16 leading-[41px] text-[32px]"
         >
           See our partners and collaborators
         </motion.h1>
@@ -33,7 +33,7 @@ export function Partners() {
             },
           }}
           //
-          className="grid  grid-cols-4 items-center gap-6 *:flex *:items-center *:justify-center *:rounded-tr-[40px] *:rounded-bl-[40px] *:rounded-tl-2xl *:rounded-br-2xl *:w-[292px] *:object-fill  *:bg-blue-50 *:py-6 *:px-5 "
+          className="grid  grid-cols-4 items-center gap-6 *:items-center *:justify-center *:rounded-tr-[40px] *:rounded-bl-[40px] *:rounded-tl-2xl *:rounded-br-2xl *:w-[292px] *:object-fill  *:bg-blue-50 *:py-6 *:px-5"
         >
           {[...images].map((src, index) => (
             <li key={index}>

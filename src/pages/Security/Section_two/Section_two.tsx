@@ -16,10 +16,10 @@ export function Section_two() {
       <section className="w-full flex items-center">
         <motion.div
           {...reveal}
-          className="flex items-center flex-col justify-between size-full bg-blue-600 pt-20 pb-24.5 bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat px-[85px]  gap-20 text-center"
+          className="flex items-center flex-col justify-between size-full bg-blue-600 pb-10 pt-20 md:pb-24.5 bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat sm:px-[50px] px-[20px] xl:px-[85px] gap-10 md:gap-20 sm:text-center "
         >
           <WordAnime
-            style="!text-5xl text-snow"
+            style="text-5xl text-snow"
             text="Your privacy, our priority"
           />
           <motion.div
@@ -27,7 +27,7 @@ export function Section_two() {
             initial="hidden"
             whileInView={"visible"}
             viewport={{ once: true }}
-            className="flex gap-8 items-center justify-center "
+            className="grid w-full sm:grid-cols-2 grid-cols-1 md:grid-cols-3 md:gap-8 items-center  justify-center "
           >
             <Card
               icons={<MdOutlineVpnKey />}

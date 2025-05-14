@@ -11,20 +11,23 @@ export function Section_Two() {
   const reveal = useRevealOnScroll();
   const parent = parentStagger();
   return (
-    <motion.section {...reveal} className="w-full flex mb-[14rem] items-center">
-      <div className="flex items-center flex-col justify-between w-full  h-[29rem] bg-blue-600  bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat px-16 gap-[8rem] pt-30 text-white">
+    <motion.section
+      {...reveal}
+      className="w-full flex lg:mb-[14rem] items-center"
+    >
+      <div className="flex items-center flex-col justify-between w-full lg:h-[29rem] bg-blue-600  bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat xl:px-16 sm:px-[50px] px-[20px] lg:gap-[8rem] gap-15 sm:gap-20 lg:pt-30  max-lg:py-20 text-white">
         <WordAnime text="Why work with us?" />
         <motion.div
           variants={parent}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: true }}
-          className="flex gap-8 items-center justify-center "
+          className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-8 items-center justify-center "
         >
           <Cards
             icons={<MdTrackChanges />}
             title="Innovative impact"
-            article="              Work on a cutting-edge health tech platform that is transforming
+            article="Work on a cutting-edge health tech platform that is transforming
               the way people manage their vaccination and medication records."
           />{" "}
           <Cards

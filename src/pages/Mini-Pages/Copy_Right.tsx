@@ -2,7 +2,6 @@ import React from "react";
 import useBackToTop from "../../Hooks/use-back-to-top";
 import useTitleChange from "../../Hooks/use-title-change";
 import { Terms } from "./Terms/Terms";
-import { motion } from "framer-motion";
 import WordAnime from "../../utils/motions/WordAnime";
 function Copy_Right() {
   // Title update on route change
@@ -17,7 +16,7 @@ function Copy_Right() {
         className="mt-[5rem]  flex flex-col items-center justify-center pb-[5rem] text-blue-800 py-20"
       >
         <WordAnime text="Copyright Policy" />
-        <div className="grid grid-cols-2 gap-8 pt-20 px-20 items-start justify-start ">
+        <div className="grid lg:grid-cols-2 gap-8 pt-20 max-sm:px-[20px] px-[50px]  xl:px-20 items-start justify-start ">
           <Terms head="Ownership of Content">
             <span>
               All content on the VaxNow website, including but not limited to

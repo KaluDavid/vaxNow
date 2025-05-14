@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
 import { slideInRightLeft } from "../../../utils/motions/motionVariants";
 import { DownloadAppContent } from "../../../components/DownloadAppContent";
-import { OurApp } from "../../../components/OurApp";
 import useWindowWidth from "../../../Hooks/use-window-width";
 import { SlideRightLeftOurApp } from "./SlideRightLeftOurApp";
 

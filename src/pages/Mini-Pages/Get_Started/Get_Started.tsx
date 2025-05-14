@@ -23,7 +23,6 @@ export default function Get_Started() {
         >
           <Hero />
           <Section_Two />
-
           <Section_three />
         </section>
         <Foot />

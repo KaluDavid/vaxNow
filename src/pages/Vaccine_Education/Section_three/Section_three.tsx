@@ -14,16 +14,13 @@ export function Section_three() {
         {...scaleIn}
         className="flex flex-col mb-[100px] py-20 bg-blue-50 bg-[url('/public/assets/Vaccine_education/ArticlesBG.svg')] items-center bg-cover justify-between w-full  text-blue-800 gap-[60px] text-center overflow-x-hidden"
       >
-        {/* <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
-          
-        </h1> */}
         <WordAnime text="Read up our latest articles" />
         <motion.div
           variants={parent}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: true }}
-          className="grid grid-cols-3 gap-10"
+          className="grid xl:grid-cols-3 px-[20px] lg:grid-cols-2 gap-10 "
         >
           <Cards
             img="/public/assets/Vaccine_education/img1.png"

@@ -17,20 +17,20 @@ function Privacy_Policy() {
       <motion.section
         ref={toTop}
         {...reveal}
-        className="flex flex-col mt-[5rem] items-center justify-center pb-[5rem] text-blue-800"
+        className="flex flex-col pt-[2rem] sm:mt-[5rem] items-center justify-center pb-[5rem] text-blue-800"
       >
-        <div className="flex text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full px-[100px] text-blue-800  overflow-x-hidden relative py-[7rem] overflow-hidden ">
+        <div className="flex sm:text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full sm:px-[50px] px-5 xl:px-[100px] text-blue-800  overflow-x-hidden relative py-[7rem] overflow-hidden ">
           <motion.div
             {...scaleFromTop}
             className="flex items-center flex-col gap-6 !text-white"
           >
-            <h1 className="font-nunito font-bold text-[56px] leading-[130%] tracking-[-0.28px] ">
+            <h1 className="font-nunito font-bold text-[42px] sm:text-[56px] leading-[130%] tracking-[-0.28px] ">
               Privacy Policy
             </h1>
-            <h2 className="text-3xl font-medium font-nunito-sans">
+            <h2 className="text-xl  sm:text-3xl font-medium font-nunito-sans">
               Your Privacy, Our Commitment
             </h2>
-            <span className="text-xl font-normal tracking-[-0.1px] w-[76%] leading-8">
+            <span className="text-lg sm:text-xl font-normal tracking-[-0.1px] lg:w-[76%] leading-8">
               At VaxNow, we prioritize the security and confidentiality of your
               personal data. This Privacy Policy outlines how we collect, use,
               and safeguard your information while providing you with seamless
@@ -38,7 +38,7 @@ function Privacy_Policy() {
             </span>
           </motion.div>
         </div>
-        <div className="grid grid-cols-2 gap-8 pt-20 px-20 items-start justify-start ">
+        <div className="grid lg:grid-cols-2 gap-8 pt-20 max-sm:px-[20px] px-[50px]  xl:px-20 items-start justify-start ">
           <Terms head="Information We Collect">
             <span>
               Personal Information: Name, date of birth, contact details, and

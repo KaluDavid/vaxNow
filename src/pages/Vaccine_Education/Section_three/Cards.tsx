@@ -23,10 +23,10 @@ export function Cards({ img, heading, children }: CardsProps) {
         variants={child}
         initial={"hidden"}
         whileInView={"visible"}
-        className="flex flex-col text-left border border-card rounded-2xl  w-[395px] rounded-tr-[200px] "
+        className="flex flex-col text-left border border-card rounded-2xl lg:w-[395px] sm:w-[600px] rounded-tr-[200px] "
       >
-        <fieldset className="w-full *:rounded-tl-2xl *:rounded-tr-[200px]">
-          <img src={img} alt="article images" className="w-auto" />
+        <fieldset className="*:w-full *:rounded-tl-2xl *:rounded-tr-[200px]">
+          <img src={img} alt="article images" className="w-auto object-cover" />
         </fieldset>
         <div className="flex  gap-12 py-6 px-3 flex-col">
           <span className="flex flex-col gap-4 *:last:text-base *:last:font-nunito-sans *:first:text-xl *:first:font-bold">

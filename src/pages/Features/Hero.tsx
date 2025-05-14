@@ -14,7 +14,7 @@ export function Hero() {
 
   return (
     <>
-      <section className="flex-col lg:flex-row flex items-center lg:pt-[100px] pt-[20px] max-lg:gap-[100px]  justify-between w-full max-sm:px-[20px] px-[50px] min-[1270px]:px-[100px]  sm:max-min-[1279px]:px-[50px] text-blue-800  overflow-x-hidden  ">
+      <section className="flex-col lg:flex-row flex items-center lg:pt-[100px] sm:pt-[20px] max-lg:gap-[100px]  justify-between w-full max-sm:px-[20px] px-[50px] min-[1270px]:px-[100px]  sm:max-min-[1279px]:px-[50px] text-blue-800  overflow-x-hidden  ">
         <motion.div
           {...scaleFromTop}
           className="flex flex-col items-start text-left"

@@ -45,6 +45,7 @@
   --breakpoint-sm-xl: 500px;
   --breakpoint-lgPX: 1025px;
   --breakpoint-xlPX: 1090px;
+  --breakpoint-min-md: 950px;
   /* --breakpoint-md: 769px; */
   --breakpoint-mid-md: 769px;
   /* --breakpoint-lg: 1025px; */

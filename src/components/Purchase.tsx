@@ -28,7 +28,7 @@ export function Purchase({
     <>
       <motion.div
         variants={child}
-        className={` flex items-start flex-col gap-10 rounded-br-2xl rounded-tl-2xl justify-start rounded-t-[120px] rounded-bl-[120px] p-10 w-[25rem]  text-blue-800 ${background}`}
+        className={` flex items-start flex-col gap-10 rounded-br-2xl rounded-tl-2xl justify-start rounded-t-[120px] rounded-bl-[120px] p-10 w-full sm:w-[25rem]  text-blue-800 ${background}`}
       >
         <div className="flex flex-col justify-start  items-start gap-6">
           <fieldset
@@ -38,8 +38,10 @@ export function Purchase({
           </fieldset>
           <p className=" text-lg font-normal ">{category}</p>
         </div>
-        <div className="flex  float-start items-end justify-start gap-4.5 w-full">
-          <p className="text-[56px] leading-[35px] font-extrabold ">₦{price}</p>
+        <div className="flex  float-start items-center sm:items-end justify-start gap-4.5 w-full">
+          <p className="md:text-[56px] max-sm:text-[32px] leading-[35px] font-extrabold ">
+            ₦{price}
+          </p>
           <small className="text-sm text-nowrap">/ per month</small>
         </div>
         <span className="flex *:w-full  w-full items-center justify-center ">
@@ -50,8 +52,10 @@ export function Purchase({
           </Button>
         </span>
         <hr className={`h-[1px] bg-blue-800 w-full ${hr}`} />
-        <ul className="flex gap-4 font-nunito-sans  flex-col font-normal [&_li]:flex [&_li]:items-center [&_li]:gap-2 text-xl">
-          <p className="font-nunito text-2xl font-semibold">Features</p>
+        <ul className="flex gap-4 font-nunito-sans  flex-col font-normal [&_li]:flex [&_li]:items-center [&_li]:gap-2 sm:text-xl">
+          <p className="font-nunito text-[24px]  font-semibold text-lg">
+            Features
+          </p>
           {children}
         </ul>
       </motion.div>

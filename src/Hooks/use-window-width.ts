@@ -10,9 +10,10 @@ export default function useWindowWidth() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   useEffect(() => {
     if (windowWidth < 768) {
-      setShow(!show);
+      setShow(false);
     }
   }, [show, windowWidth]);
 

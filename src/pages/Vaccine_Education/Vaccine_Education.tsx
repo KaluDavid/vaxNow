@@ -16,7 +16,7 @@ export default function Vaccine_Education() {
     <>
       <section
         ref={toTop}
-        className="flex mt-[5rem] flex-col items-center justify-center  py-[5rem] pt-[6.5rem]"
+        className="flex lg:mt-[5rem] flex-col items-center justify-center pt-[8rem] py-[5rem] lg:pt-[6.5rem]"
       >
         <Hero />
         <Section_Two />

@@ -12,7 +12,7 @@ export function Subscribe() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="flex gap-8 items-center justify-center w-full"
+        className="flex xl:flex-row xl:flex-nowrap flex-wrap gap-8 items-center xl:justify-start w-full"
       >
         <Purchase
           background="bg-white shadow-purchase"

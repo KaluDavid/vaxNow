@@ -73,7 +73,7 @@ export function Item() {
                 },
               },
             }}
-            className="flex sm-lg:h-[74vh] mid-sm:h-[70vh] sm-sm:h-[64vh] h-[55vh] items-end justify-end  [&_span]:rounded-full [&_span]:flex [&_span]:items-center text-white [&_span]:justify-center *:text-[32px] *:p-3.5 *:w-[50px] *:h-[50px]  sm:h-full fixed -top-20 left-35 overflow-hidden gap-3 "
+            className="flex mid-sm:h-[50vh] sm-sm:h-[64vh] h-[55vh] items-end justify-end  [&_span]:rounded-full [&_span]:flex [&_span]:items-center text-white [&_span]:justify-center *:text-[32px] *:p-3.5 *:w-[50px] *:h-[50px]  sm:h-full fixed -top-20 left-35 overflow-hidden gap-3 "
           >
             <span className={items.className}>{items.icon}</span>
           </motion.div>

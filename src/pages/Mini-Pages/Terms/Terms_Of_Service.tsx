@@ -30,7 +30,7 @@ function Terms_Of_Service() {
         </motion.fieldset>
         <motion.div
           {...reveal}
-          className="grid grid-cols-2 gap-8 pt-10 px-20 items-start justify-start "
+          className="grid lg:grid-cols-2 gap-8 pt-10 max-sm:px-[20px] px-[50px] xl:px-20 items-start justify-start "
         >
           <Terms head="1. Introduction">
             <span>

@@ -26,12 +26,12 @@ export function FAQ() {
           viewport={{ once: true }}
         >
           <DownloadAppContent
-            style="gap-[10px] "
+            style="sm:gap-[10px] "
             headStyle="max-sm:text-5xl"
             width="full"
             heading="FAQs"
             article="Answers to frequently asked questions"
-            button="mt-[48px]"
+            button="sm:mt-[48px]"
           />
         </motion.span>
         <motion.span

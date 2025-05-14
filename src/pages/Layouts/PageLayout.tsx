@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 export function PageLayout() {
   return (
     <>
-      <section className="bg-[red] size-full overflow-x-hidden">
+      <section className="size-full overflow-x-hidden">
         <Header />
         <Outlet />
         <Footer />
