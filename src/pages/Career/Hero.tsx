@@ -10,7 +10,7 @@ export function Hero() {
   const parent = parentStagger();
   return (
     <>
-      <div className="flex lg:flex-row flex-col items-center justify-between w-full xl:px-[100px] sm:px-[50px] px-[20px]  text-blue-800  overflow-x-hidden xl:gap-0 gap-10 sm:gap-18 lg:gap-4">
+      <div className="flex lg:flex-row flex-col items-center justify-between w-full xl:px-[100px] sm:px-[50px] px-5  text-blue-800  overflow-x-hidden xl:gap-0 gap-10 sm:gap-18 lg:gap-4">
         <motion.div
           {...scaleFromTop}
           className="flex flex-col items-start text-left"

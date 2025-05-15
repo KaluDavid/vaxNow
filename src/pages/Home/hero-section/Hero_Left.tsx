@@ -2,24 +2,27 @@ import React from "react";
 import { Download } from "../../../components/Download";
 import { motion } from "framer-motion";
 import useScaleTop from "../../../utils/motions/MotionHooks/useScaleTop";
+import { revealFromBottom } from "../../../utils/motions/motionVariants";
 export function Hero_Left() {
   const scaleFromTop = useScaleTop();
+  const fromBottom = revealFromBottom();
+
   return (
     <>
       <motion.section
         {...scaleFromTop}
-        className="flex flex-col items-start text-left"
+        className="flex flex-col items-start text-left overflow-x-hidden"
       >
         <div className="flex items-start flex-col gap-6">
-          <h1 className="font-nunito [&_span]:text-blue-600  font-bold text-nowrap text-[56px] leading-[130%] tracking-[-0.28px] ">
-            Never miss a vaccine <br /> dose. Your
+          <h1 className="font-nunito [&_span]:text-blue-600  font-bold sm:text-nowrap text-[32px] sm:text-[56px] leading-[130%]  tracking-[-0.28px] [&_br]:max-sm-sm:hidden">
+            Never miss a vaccine <br /> dose. Your{" "}
             <span>
-              Vaccination <br />
-              tracker
+              {" "}
+              Vaccination <br /> tracker{" "}
             </span>
             and reminder
           </h1>
-          <span className="text-xl font-normal tracking-[-0.1px] w-[433px] leading-8">
+          <span className="text-lg sm:text-xl font-normal tracking-[-0.1px] lg:w-[433px] leading-8">
             A comprehensive health management tool that goes beyond traditional
             medication tracking
           </span>
@@ -36,7 +39,13 @@ export function Hero_Left() {
           </div>
           <div className="flex items-start gap-[88px] flex-col">
             <Download playstore="*:text-blue-800 bg-gray-100 " />
-            <div className="flex flex-col gap-6">
+            <motion.div
+              variants={fromBottom}
+              initial={"hidden"}
+              whileInView={"visible"}
+              viewport={{ once: true }}
+              className="flex flex-col gap-6"
+            >
               <p className="text-gray-900 text-xl font-bold font-nunito ">
                 Approved by
               </p>
@@ -47,7 +56,7 @@ export function Hero_Left() {
                 />
                 <img src="/assets/home_img/NAFDAC.svg" alt="NAFDAC" />
               </fieldset>
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.section>

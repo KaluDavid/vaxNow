@@ -46,10 +46,10 @@
   --breakpoint-lgPX: 1025px;
   --breakpoint-xlPX: 1090px;
   --breakpoint-min-md: 950px;
-  /* --breakpoint-md: 769px; */
   --breakpoint-mid-md: 769px;
-  /* --breakpoint-lg: 1025px; */
-  /* --breakpoint-xl: 1281px; */
+  --breakpoint-tab27: 800px;
+  --breakpoint-pro11: 834px;
+  --breakpoint-fold2: 884px;
   --breakpoint-xxl: 1440px;
 }
 

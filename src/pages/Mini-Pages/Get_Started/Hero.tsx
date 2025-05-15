@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import useScaleTop from "../../../utils/motions/MotionHooks/useScaleTop";
-import Atropos from "atropos/react";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
 
 const phoneVaraint = {
@@ -13,7 +11,6 @@ const phoneVaraint = {
   },
 };
 function Hero() {
-  const scaleFromTop = useScaleTop();
   const reveal = useRevealOnScroll();
 
   return (
@@ -22,10 +19,7 @@ function Hero() {
         {...reveal}
         className="flex lg:flex-row flex-col text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] gap-15 items-center bg-cover justify-between w-full xl:px-[100px] text-blue-800 py-[100px] sm:px-[50px] px-5 overflow-x-hidden"
       >
-        <motion.div
-          {...scaleFromTop}
-          className="flex sm:w-[40rem] *:text-white items-start flex-col gap-6"
-        >
+        <div className="flex sm:w-[40rem] *:text-white items-start flex-col gap-6">
           <h1 className="font-nunito font-bold text-[32px] sm:text-[56px] leading-[41px] sm:leading-[130%]  tracking-[-0.28px] flex items-center gap-4">
             🛡️ Welcome to VaxNow
           </h1>
@@ -35,7 +29,7 @@ function Hero() {
             vaccination insights, reminders, and tools to help you stay
             protected—anytime, anywhere.
           </motion.span>
-        </motion.div>
+        </div>
 
         <motion.fieldset
           variants={phoneVaraint}

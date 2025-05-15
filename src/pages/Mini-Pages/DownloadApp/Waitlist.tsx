@@ -20,11 +20,11 @@ export function Waitlist() {
         initial={"hidden"}
         whileInView={"visible"}
         viewport={{ once: true }}
-        className="text-blue-800 px-[80px] flex items-center flex-col pb-[5rem] justify-center gap-[88px] text-center"
+        className="text-blue-800 sm:px-[50px] px-5 xl:px-[80px] flex items-center flex-col pb-[5rem] w-full justify-center gap-[88px] sm:text-center"
       >
-        <div className="w-full flex items-center justify-center rounded-br-[250px] rounded-tl-[250px] gap-[100px] rounded-bl-[60px] rounded-tr-[60px] shadow-soft-lg bg-blue-50 py-[121px] px-[170px]">
-          <div className="flex flex-col items-center gap-7">
-            <h3 className="font-semibold text-5xl font-nunito leading-[62px] flex items-center gap-[20px]">
+        <div className="w-full flex items-center justify-center fold2:rounded-br-[250px] sm:rounded-br-[150px] fold2:rounded-tl-[250px] sm:rounded-tl-[150px] gap-[100px] rounded-bl-[60px] rounded-tr-[60px] shadow-soft-lg bg-blue-50 py-[50px] xl:py-[121px] sm:px-[50px] px-5 xl:px-[170px]">
+          <div className="flex flex-col items-center gap-7 w-full">
+            <h3 className="font-semibold text-[32px] sm:text-5xl font-nunito sm:leading-[62px] flex items-center sm:gap-[20px] gap-2">
               <motion.span
                 variants={slideLeft}
                 initial="initial"
@@ -48,19 +48,19 @@ export function Waitlist() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="flex flex-col gap-7 items-center "
+              className="flex flex-col gap-7 w-full items-center "
             >
-              <p className="text-xl font-normal  leading-[30px]">
+              <p className="text-lg sm:text-xl font-normal  leading-[30px]">
                 Want to be the first to know when the app drops?
               </p>
-              <div className="flex *:py-[8px] items-center">
+              <div className="flex sm:flex-row flex-col *:py-[8px] items-start sm:items-center w-full">
                 <input
                   type="email"
                   name="email"
                   placeholder="Please enter your email adress"
-                  className="w-[420px] border-r-0 rounded-r-none h-14.5 pl-4 text-base font-normal rounded-xl border border-input outline-input placeholder:text-input"
+                  className="pro11:w-[420px] w-full sm:border-r-0 sm:rounded-r-none h-14.5 pl-4 text-base font-normal rounded-xl border border-input outline-input placeholder:text-input"
                 />
-                <Button style="rounded-l-none bg-blue-800  flex-row">
+                <Button style="sm:rounded-l-none bg-blue-800  flex-row max-sm:text-lg">
                   Subscribe
                 </Button>
               </div>

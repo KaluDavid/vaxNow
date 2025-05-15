@@ -10,7 +10,7 @@ export function Section_three() {
     <>
       <motion.section
         {...scrollIn}
-        className="flex flex-col gap-0 items-center w-full"
+        className="flex flex-col xl:gap-0 gap-[64px] items-center w-full bg-gray-150"
       >
         <Top />
         <Bottom />

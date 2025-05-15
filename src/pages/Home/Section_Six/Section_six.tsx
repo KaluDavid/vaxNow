@@ -17,9 +17,9 @@ export function Section_six() {
         >
           <WordAnime
             text="Hear from our satisfied users"
-            style="!text-5xl font-semibold"
+            style="!sm:text-5xl font-semibold"
           />
-          <h3 className="font-nunito-sans text-2xl font-normal">
+          <h3 className="font-nunito-sans text-lg sm:text-2xl font-normal">
             Discover how ImmuniSafe is transforming lives
           </h3>
         </motion.div>

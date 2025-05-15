@@ -2,7 +2,6 @@ import React from "react";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
 import {
   revealFromBottom,
-  slideInLeftRight,
   slideInRightLeft,
 } from "../../../utils/motions/motionVariants";
 import { motion } from "framer-motion";
@@ -10,7 +9,6 @@ import { motion } from "framer-motion";
 export function Section_three() {
   const reveal = useRevealOnScroll();
   const slideRight = slideInRightLeft();
-  const slideLeft = slideInLeftRight();
   const slideBottom = revealFromBottom();
 
   return (

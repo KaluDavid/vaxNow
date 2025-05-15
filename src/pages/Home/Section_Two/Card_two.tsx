@@ -10,7 +10,7 @@ export function Card_Two() {
         />
       </div>
 
-      <h2 className="text-blue-800 text-[32px] font-semibold text-center">
+      <h2 className="text-blue-800 text-[28px] sm-sm:text-[32px] font-semibold text-center">
         Stay Healthy
       </h2>
     </>

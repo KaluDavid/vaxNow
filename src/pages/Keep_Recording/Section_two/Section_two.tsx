@@ -54,9 +54,9 @@ export function Section_two() {
 
         <motion.div
           {...reveal}
-          className="flex  items-end  gap-8 *:bg-blue-50 *:rounded-3xl h-screen w-full"
+          className="flex  items-end  gap-8 *:bg-blue-50 *:rounded-3xl lg:h-screen w-full"
         >
-          {windowWidth > 768 && (
+          {windowWidth > 1024 && (
             <motion.fieldset
               variants={slideLeft}
               initial="initial"
@@ -93,7 +93,7 @@ export function Section_two() {
               initial="hidden"
               whileInView={"visible"}
               viewport={{ amount: 0.2, once: true }}
-              className="flex items-center size-full justify-center sm:max-w-[40%] sm-lg:w-[17rem] min-w-[40%]"
+              className="flex items-center size-full justify-center sm:max-w-[40%] sm-lg:w-[17rem] min-w-[40%] fold2:max-lg:min-w-full"
             >
               <img
                 src="/public/assets/Record_keeping/key.png"

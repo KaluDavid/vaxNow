@@ -12,8 +12,12 @@ export function Download({ button, playstore }: DownloadProps) {
       <div className="flex flex-col sm-xl:flex-row items-start  sm:items-center justify-between gap-8 w-full">
         <motion.span
           initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.9 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.7, delay: 0.9 },
+          }}
+          viewport={{ once: true }}
           className="flex"
         >
           <Button style={`w-[16rem] ${button}`} to="/get_started">
@@ -23,8 +27,12 @@ export function Download({ button, playstore }: DownloadProps) {
 
         <motion.span
           initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.9 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.7, delay: 0.9 },
+          }}
+          viewport={{ once: true }}
           className="flex"
         >
           <Button

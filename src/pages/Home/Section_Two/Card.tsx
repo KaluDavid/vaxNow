@@ -12,7 +12,7 @@ export default function Card({ style, children }: CardProp) {
     <>
       <motion.div
         {...hoverCards}
-        className={`pt-10 pb-0 w-[23rem] shadow-blue-30 shadow-soft-lg flex flex-col justify-end items-center gap-20 bg-blue-50  rounded-2xl h-[440px] ${style}`}
+        className={`sm-lg:pt-10 pt-7 sm-lg:pb-10 pb-7 max-w-full sm-lg:w-[23rem] shadow-blue-30 shadow-soft-lg flex flex-col justify-end items-center gap-20 bg-blue-50  rounded-2xl sm-lg:h-[440px] ${style}`}
       >
         {children}
       </motion.div>
