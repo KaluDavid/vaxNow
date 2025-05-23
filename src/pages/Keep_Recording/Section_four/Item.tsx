@@ -1,4 +1,3 @@
-import React from "react";
 import { scaleIn } from "../../../utils/motions/motionVariants";
 import { motion } from "framer-motion";
 import { MdLock, MdAddToDrive, MdOutlineSecurity } from "react-icons/md";

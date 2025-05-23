@@ -1,6 +1,5 @@
-import React from "react";
 import { Download } from "../../components/Download";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import useScaleTop from "../../utils/motions/MotionHooks/useScaleTop";
 
 const entryVariants = {

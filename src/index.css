@@ -51,6 +51,9 @@
   --breakpoint-pro11: 834px;
   --breakpoint-fold2: 884px;
   --breakpoint-xxl: 1440px;
+
+  /* Animation */
+  --animate-marquee: "marquee 20s linear infinite";
 }
 
 @font-face {
@@ -62,25 +65,25 @@
 }
 
 /* HIDE SCROLL */
-/* 
-.hide-scrollbar ::-webkit-scrollbar {
-  display: none;
-} */
-
 ::-webkit-scrollbar {
   display: none;
 }
 
-::-webkit-scrollbar-track {
-  background: #d6d6e0;
+/* CAROUSEL */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 5px;
+.slide-track {
+  animation: scroll 30s infinite linear;
 }
 
-/* scroll bar hidden  */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
+.slide {
+  transition: transform 2s;
 }

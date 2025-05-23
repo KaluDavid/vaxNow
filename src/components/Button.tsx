@@ -5,14 +5,14 @@ import useHoverButton from "../utils/motions/MotionHooks/useHoverButton";
 interface ButtonProps {
   children: ReactNode;
   style?: string;
-  to?: string | ReactNode;
-  HandleClick?: React.MouseEventHandler<HTMLAnchorElement> | undefined;
+  to?: string;
+  HandleClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 export function Button({ children, style, to, HandleClick }: ButtonProps) {
   const hoverScale = useHoverButton();
   return (
     <>
-      <Link to={to} onClick={HandleClick}>
+      <Link to={`${to}`} onClick={HandleClick}>
         <motion.button
           {...hoverScale}
           className={`flex flex-nowrap text-nowrap bg-blue-600 rounded-lg w-full  items-center justify-center gap-1.5 text-white text-xl text-lg  p-[15px] px-[30px]  font-semibold cursor-pointer ${style}`}

@@ -1,4 +1,3 @@
-import React from "react";
 import Section_Eight from "./Section_Eight";
 import { Foot } from "./Foot";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { Top } from "./Top";
 import { Bottom } from "./Bottom";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
@@ -10,7 +9,7 @@ export function Section_three() {
     <>
       <motion.section
         {...scrollIn}
-        className="flex flex-col xl:gap-0 gap-[64px] items-center w-full bg-gray-150"
+        className="flex flex-col gap-[64px] items-center w-full bg-gray-150"
       >
         <Top />
         <Bottom />

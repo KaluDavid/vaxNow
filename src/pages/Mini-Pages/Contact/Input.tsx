@@ -19,7 +19,7 @@ export function Input({
       initial="hidden"
       whileInView={"visible"}
       viewport={{ once: true }}
-      className="flex flex-col text-xl font-normal tracking-[-0.1px] w-full leading-8"
+      className="flex flex-col gap-3 text-xl font-normal tracking-[-0.1px] w-full leading-8"
     >
       <label htmlFor={type}>{label}</label>
       {textArea ? (

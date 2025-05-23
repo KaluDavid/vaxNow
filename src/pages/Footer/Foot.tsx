@@ -1,4 +1,3 @@
-import React from "react";
 import { FiFacebook } from "react-icons/fi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { PiInstagramLogoLight } from "react-icons/pi";

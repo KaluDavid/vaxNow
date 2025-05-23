@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";
 import { revealFromBottom } from "../../../utils/motions/motionVariants";

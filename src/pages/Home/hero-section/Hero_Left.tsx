@@ -1,4 +1,3 @@
-import React from "react";
 import { Download } from "../../../components/Download";
 import { motion } from "framer-motion";
 import useScaleTop from "../../../utils/motions/MotionHooks/useScaleTop";
@@ -11,10 +10,10 @@ export function Hero_Left() {
     <>
       <motion.section
         {...scaleFromTop}
-        className="flex flex-col items-start text-left overflow-x-hidden"
+        className="flex flex-col items-start text-left overflow-x-hidden "
       >
         <div className="flex items-start flex-col gap-6">
-          <h1 className="font-nunito [&_span]:text-blue-600  font-bold sm:text-nowrap text-[32px] sm:text-[56px] leading-[130%]  tracking-[-0.28px] [&_br]:max-sm-sm:hidden">
+          <h1 className="font-nunito [&_span]:text-blue-600 font-bold sm:text-nowrap text-[32px] sm:text-[50px] leading-[130%]  tracking-[-0.28px] [&_br]:max-sm-sm:hidden ">
             Never miss a vaccine <br /> dose. Your{" "}
             <span>
               {" "}

@@ -1,4 +1,3 @@
-import React from "react";
 import { Subscribe } from "../../../components/Subscribe";
 import { Button } from "../../../components/Button";
 import { motion } from "framer-motion";

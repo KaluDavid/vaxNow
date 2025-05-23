@@ -1,4 +1,3 @@
-import React from "react";
 import { Subscribe } from "../../../components/Subscribe";
 import { motion } from "framer-motion";
 import useRevealOnScroll from "../../../utils/motions/MotionHooks/useRevealOnScroll";

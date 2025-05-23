@@ -1,4 +1,3 @@
-import React from "react";
 import { Download } from "../../components/Download";
 import { MdLock, MdAddToDrive, MdOutlineSecurity } from "react-icons/md";
 import { BsCloudUploadFill } from "react-icons/bs";

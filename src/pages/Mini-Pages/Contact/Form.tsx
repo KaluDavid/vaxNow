@@ -1,4 +1,3 @@
-import React from "react";
 import { Input } from "./Input";
 import { Button } from "../../../components/Button";
 import Map from "./Map";
@@ -12,13 +11,13 @@ export function Form() {
   const child = childStagger();
   return (
     <div className="flex w-full text-left text-blue-800 bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full px-5 sm:px-[50px]  xl:px-[100px]   overflow-x-hidden relative py-20 overflow-hidden">
-      <div className="flex min-md:flex-row flex-col w-full justify-center rounded-3xl shadow-2xl bg-white items-center xl:gap-[99px] gap-10 ">
+      <div className="flex  min-md:flex-row flex-col size-screen justify-center rounded-3xl shadow-2xl bg-white items-center xl:gap-10 min-md:gap-0 gap-10 ">
         <motion.div
           variants={parent}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: true }}
-          className="flex xl:py-10 flex-col gap-5 items-start xl:pl-20 min-md:pl-10 px-5 sm:px-10 w-full"
+          className="flex xl:py-10 flex-col gap-5 items-start  min-md:pl-10 px-5 sm:px-10 w-full pb-"
         >
           <motion.h1
             variants={child}

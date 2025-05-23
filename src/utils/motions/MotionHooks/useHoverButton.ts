@@ -1,5 +1,3 @@
-import React from "react";
-
 const useHoverButton = () => {
   return {
     initial: { scale: 1 },

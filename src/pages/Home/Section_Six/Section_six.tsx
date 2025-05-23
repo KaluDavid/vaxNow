@@ -1,4 +1,3 @@
-import React from "react";
 import { User } from "./User";
 import { parentStagger } from "../../../utils/motions/motionVariants";
 import { motion } from "framer-motion";

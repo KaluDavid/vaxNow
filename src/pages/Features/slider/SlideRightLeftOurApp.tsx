@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { OurApp } from "../../../components/OurApp";
 import { slideInLeftRight } from "../../../utils/motions/motionVariants";

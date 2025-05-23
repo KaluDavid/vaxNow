@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "./Button";
 import { FaApple } from "react-icons/fa6";
 import { motion } from "framer-motion";

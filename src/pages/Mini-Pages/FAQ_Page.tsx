@@ -1,4 +1,3 @@
-import React from "react";
 import useBackToTop from "../../Hooks/use-back-to-top";
 import useTitleChange from "../../Hooks/use-title-change";
 import { FAQ } from "../../components/FAQ/FAQ";

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "./Button";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -31,7 +31,7 @@ export default function Header() {
         initial={{ opacity: 0, y: -80 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="flex items-center fixed w-full bg-white z-50 py-[30px] justify-between max-lg:px-[50px] max-sm:px-[20px] lg:max-xl:px-[50px] xl:px-[100px] font-nunito-sans"
+        className="flex items-center top-0 fixed w-full bg-white z-50 py-[30px] justify-between max-lg:px-[50px] max-sm:px-[20px] lg:max-xl:px-[50px] xl:px-[100px] font-nunito-sans"
       >
         <NavLink to="/">
           <img

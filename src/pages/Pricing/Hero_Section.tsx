@@ -1,4 +1,3 @@
-import React from "react";
 import { Download } from "../../components/Download";
 import useScaleTop from "../../utils/motions/MotionHooks/useScaleTop";
 import { motion } from "framer-motion";

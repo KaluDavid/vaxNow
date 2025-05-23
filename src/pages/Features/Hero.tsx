@@ -1,4 +1,3 @@
-import React from "react";
 import { Download } from "../../components/Download";
 import { motion, useReducedMotion } from "framer-motion";
 import useScaleTop from "../../utils/motions/MotionHooks/useScaleTop";

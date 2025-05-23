@@ -1,4 +1,3 @@
-import React from "react";
 import Sect from "./Sect";
 export function Left() {
   return (

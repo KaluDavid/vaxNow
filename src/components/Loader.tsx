@@ -1,46 +1,71 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { Button } from "./Button";
-import { HealthCard } from "./HealthCard";
-import { MdVaccines } from "react-icons/md";
-import { Download } from "./Download";
-
 function Loader() {
   return (
-    <div className="size-screen animate-pulse  flex flex-col items-center gap-[9rem] px-[3rem] pt-[3rem] overflow-hidden">
-      <section className="flex items-center justify-between w-full">
-        <div className="w-[20%] py-[3rem] rounded-xl bg-gray-400 "></div>
+    <div className="h-screen animate-pulse flex flex-col items-center gap-24 px-5 sm:px-10 xl:px-12 pt-12 overflow-hidden">
+      {/* Top Section */}
+      <section className="flex flex-col sm:flex-row items-center justify-between w-full gap-6">
+        <div className="w-full sm:w-[30%] py-12 rounded-xl bg-gray-400"></div>
 
-        <div className="flex items-center gap-8 ">
-          <div className="flex *:py-[2rem]  items-center gap-6  *:w-[10rem] *:rounded-xl  *:bg-gray-300  ">
+        <div className="flex flex-col sm:flex-row items-center gap-6 w-full sm:w-[65%]">
+          <div className="flex flex-wrap sm:justify-center items-start justify-start gap-4 w-full sm:w-auto *:py-6 *:w-24 sm:*:w-36 *:rounded-xl *:bg-gray-300">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <span className="w-[10rem] py-[3rem] rounded-xl bg-gray-400"></span>
+          <span className="w-full sm:w-40 py-12 rounded-xl bg-gray-400"></span>
         </div>
       </section>
 
-      <section className="flex items-start gap-40 w-full ">
-        <div className="flex flex-col w-[45%] ">
-          <div className="flex items-start w-full flex-col *:w-full gap-6 ">
-            <span className="rounded-xl bg-gray-300 py-[4rem] w-[20%]"></span>
-            <div className="flex flex-col items-start justify-start gap-3 *:bg-gray-300 *:py-4 *:rounded-xl ">
-              <span className="w-[20%]"></span>
-              <span className="w-[50%]"></span>
-              <span className="w-[30%]"></span>
-            </div>{" "}
-            <div className="flex flex-col items-end justify-end gap-3 *:bg-gray-300 *:py-4 *:rounded-xl ">
-              <span className="w-[20%]"></span>
-              <span className="w-[50%]"></span>
-              <span className="w-[30%]"></span>
+      {/* Middle Section */}
+      <section className="flex flex-col lg:flex-row items-start gap-20 w-full">
+        <div className="flex flex-col w-full lg:w-1/2">
+          <div className="flex flex-col gap-6 w-full *:w-full">
+            <span className="rounded-xl bg-gray-300 py-16 w-1/3"></span>
+
+            <div className="flex flex-col items-start gap-3 *:bg-gray-300 *:py-4 *:rounded-xl">
+              <span className="w-1/4"></span>
+              <span className="w-1/2"></span>
+              <span className="w-1/3"></span>
+            </div>
+
+            <div className="flex flex-col items-end gap-3 *:bg-gray-300 *:py-4 *:rounded-xl">
+              <span className="w-1/4"></span>
+              <span className="w-1/2"></span>
+              <span className="w-1/3"></span>
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-[45%] ">
-          <div className="flex items-start w-full flex-col *:w-full gap-6 ">
-            <span className="rounded-xl bg-gray-300 py-[10rem] "></span>
+
+        <div className="flex flex-col w-full lg:w-1/2">
+          <div className="flex flex-col gap-6 w-full *:w-full">
+            <span className="rounded-xl bg-gray-300 py-40"></span>
+          </div>
+        </div>
+      </section>
+
+      {/* Bottom Section */}
+      <section className="flex flex-col lg:flex-row items-start gap-20 w-full">
+        <div className="flex flex-col w-full lg:w-1/2">
+          <div className="flex flex-col gap-6 w-full *:w-full">
+            <span className="rounded-xl bg-gray-300 py-40"></span>
+          </div>
+        </div>
+
+        <div className="flex flex-col w-full lg:w-1/2">
+          <div className="flex flex-col gap-6 w-full *:w-full">
+            <span className="rounded-xl bg-gray-300 py-16 w-1/3"></span>
+
+            <div className="flex flex-col items-start gap-3 *:bg-gray-300 *:py-4 *:rounded-xl">
+              <span className="w-1/4"></span>
+              <span className="w-1/2"></span>
+              <span className="w-1/3"></span>
+            </div>
+
+            <div className="flex flex-col items-end gap-3 *:bg-gray-300 *:py-4 *:rounded-xl">
+              <span className="w-1/4"></span>
+              <span className="w-1/2"></span>
+              <span className="w-1/3"></span>
+            </div>
           </div>
         </div>
       </section>

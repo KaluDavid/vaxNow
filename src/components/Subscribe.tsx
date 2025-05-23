@@ -1,4 +1,3 @@
-import React from "react";
 import { GoCheckCircle } from "react-icons/go";
 import { Purchase } from "./Purchase";
 import { motion } from "framer-motion";

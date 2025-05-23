@@ -1,8 +1,6 @@
-import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { HealthCard } from "../../../components/HealthCard";
 import { motion } from "framer-motion";
-import { useReducedMotion } from "framer-motion";
 import {
   revealFromBottom,
   slideInRightLeft,
@@ -15,6 +13,9 @@ const container = {
     opacity: 1,
     transition: {
       staggerChildren: 0.25,
+      amount: 10,
+      duration: 0.5,
+      ease: "easeInOut",
     },
   },
 };
@@ -23,12 +24,6 @@ const child = {
   hidden: { opacity: 0 },
   animate: {
     opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: "easeInOut",
-      repeat: Infinity,
-      repeatType: "mirror", // makes it pulse back
-    },
   },
 };
 
@@ -94,31 +89,61 @@ export function Hero_Right() {
               <motion.fieldset
                 variants={container}
                 initial="hidden"
-                animate="animate"
+                whileInView="animate"
                 className="flex items-center gap-1 *:w-[11px] *:h-[11px] object-contain"
               >
                 <motion.img
                   variants={child}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "mirror", // makes it pulse back
+                  }}
                   src="/assets/star.svg"
                   alt="star"
                 />
                 <motion.img
                   variants={child}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "mirror", // makes it pulse back
+                  }}
                   src="/assets/star.svg"
                   alt="star"
                 />
                 <motion.img
                   variants={child}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "mirror", // makes it pulse back
+                  }}
                   src="/assets/star.svg"
                   alt="star"
                 />
                 <motion.img
                   variants={child}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "mirror", // makes it pulse back
+                  }}
                   src="/assets/star.svg"
                   alt="star"
                 />
                 <motion.img
                   variants={child}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "mirror", // makes it pulse back
+                  }}
                   src="/assets/star.svg"
                   alt="star"
                 />

@@ -1,4 +1,3 @@
-import React from "react";
 import { DownloadAppContent } from "../DownloadAppContent";
 import { DropDown } from "./DropDown";
 import {
@@ -27,7 +26,6 @@ export function FAQ() {
         >
           <DownloadAppContent
             style="sm:gap-[10px] "
-            headStyle="max-sm:text-5xl"
             width="full"
             heading="FAQs"
             article="Answers to frequently asked questions"

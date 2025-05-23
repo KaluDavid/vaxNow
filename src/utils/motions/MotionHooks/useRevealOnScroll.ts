@@ -1,5 +1,3 @@
-import React from "react";
-
 const useRevealOnScroll = () => {
   return {
     initial: { opacity: 0, y: 50 },

@@ -1,4 +1,3 @@
-import React from "react";
 import { MdTrackChanges } from "react-icons/md";
 import { BsGlobeEuropeAfrica } from "react-icons/bs";
 import { IoMdTrendingUp } from "react-icons/io";

@@ -1,5 +1,3 @@
-import React from "react";
-import WordAnime from "../../../utils/motions/WordAnime";
 import {
   slideInLeftRight,
   slideInRightLeft,

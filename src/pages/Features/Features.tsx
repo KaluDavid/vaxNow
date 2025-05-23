@@ -1,4 +1,3 @@
-import React from "react";
 import { Hero } from "./Hero";
 import { Section_two } from "./Section_Two/Section_two";
 import { Section_three } from "./Section_three/Section_three";

@@ -1,4 +1,3 @@
-import React from "react";
 import { Download } from "../../components/Download";
 import { HealthCard } from "../../components/HealthCard";
 import { MdVaccines } from "react-icons/md";

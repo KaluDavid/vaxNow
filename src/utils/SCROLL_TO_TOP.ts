@@ -1,7 +1,5 @@
-import React from "react";
-
 function SCROLL_TO_TOP() {
-  return window.scroll(0, 0);
+  return window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 export default SCROLL_TO_TOP;

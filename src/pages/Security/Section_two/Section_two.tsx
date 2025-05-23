@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineVpnKey } from "react-icons/md";
 import { GrTable } from "react-icons/gr";
 import { TbLock } from "react-icons/tb";
