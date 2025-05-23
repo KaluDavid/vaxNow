@@ -15,7 +15,7 @@ export default function Career() {
     <>
       <section
         ref={toTop}
-        className="flex mt-[5rem] flex-col items-center justify-center  py-[5rem] gap-[100px]"
+        className="flex sm:mt-[5rem] mt-[2.5rem] flex-col items-center justify-center  py-[5rem] gap-[100px]"
       >
         <Hero />
         <Section_Two />

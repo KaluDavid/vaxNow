@@ -23,7 +23,7 @@ function FAQ_Page() {
         {...scaleIn}
         className="flex pt-[5rem] flex-col items-center justify-center gap-[100px] pb-[5rem]"
       >
-        <div className="flex text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full sm:px-[50px] px-5 xl:px-[100px] text-blue-800  overflow-x-hidden relative py-[5rem] xl:py-[12rem] overflow-hidden sm:text-center text-left">
+        <div className="flex text-center text-white bg-blue-600 bg-[url('/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full sm:px-[50px] px-5 xl:px-[100px] text-blue-800  overflow-x-hidden relative py-[5rem] xl:py-[12rem] overflow-hidden sm:text-center text-left">
           <div className="flex items-center flex-col gap-6">
             <WordAnime text="Have Questions? We've Got Answers!" />
             <motion.span
@@ -47,7 +47,7 @@ function FAQ_Page() {
               animate={{ x: 0 }}
               transition={{ delay: 0.8, duration: 0.9, ease: "linear" }}
               viewport={{ once: true }}
-              src="/public/assets/question.svg"
+              src="/assets/question.svg"
               alt="FAQ"
             />
             <motion.img
@@ -55,7 +55,7 @@ function FAQ_Page() {
               animate={{ x: 0 }}
               transition={{ delay: 0.8, duration: 0.9, ease: "linear" }}
               viewport={{ once: true }}
-              src="/public/assets/question.svg"
+              src="/assets/question.svg"
               alt="FAQ"
             />
           </fieldset>
@@ -67,7 +67,7 @@ function FAQ_Page() {
           {...scaleIn}
           className="w-full sm:px-[50px] px-5 xl:px-[80px] flex items-center"
         >
-          <div className="flex rounded-2xl sm-sm:items-center flex-col justify-between size-full bg-blue-600 mb:pt-20 md:pb-24.5 py-10 bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat px-5 sm:px-[50px] md:px-[85px]  gap-8 text-center ">
+          <div className="flex rounded-2xl sm-sm:items-center flex-col justify-between size-full bg-blue-600 mb:pt-20 md:pb-24.5 py-10 bg-[url('/assets/home_img/section_two_img/sect.svg')] bg-no-repeat px-5 sm:px-[50px] md:px-[85px]  gap-8 text-center ">
             <WordAnime
               text="Still have questions?"
               style="text-snow text-5xl font-semibold leading-16"
@@ -84,7 +84,7 @@ function FAQ_Page() {
                   },
                 }}
                 viewport={{ once: true }}
-                src="/public/assets/arrow.svg"
+                src="/assets/arrow.svg"
                 alt="arrow"
                 className="w-30 mt-[-30px] absolute sm:right-[-8rem] sm-sm:right-[-6rem] right-[-1rem]"
               />

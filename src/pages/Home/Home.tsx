@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <main
         ref={toTop}
-        className="py-[5rem] sm:mt-[5rem] mt-[3rem] flex items-center gap-[100px] justify-center flex-col size-full overflow-x-hidden"
+        className="py-[5rem] sm:mt-[5rem] mt-[2.5rem] flex items-center gap-[100px] justify-center flex-col size-full overflow-x-hidden"
       >
         <Hero_Section />
         <Section_Two />

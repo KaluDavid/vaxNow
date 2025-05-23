@@ -11,10 +11,10 @@ export function Section_Two() {
   const scrollIn = useRevealOnScroll();
   return (
     <section className="w-full flex xl:mb-[14rem] items-center">
-      <div className="flex items-center flex-col justify-between w-full xl:h-[29rem] bg-blue-600  bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat sm:px-[50px] py-20 xl:pt-30 px-5 xl:px-16 gap-[8rem]">
+      <div className="flex items-center flex-col justify-between w-full xl:h-[29rem] bg-blue-600  bg-[url('/assets/home_img/section_two_img/sect.svg')] bg-no-repeat sm:px-[50px] py-20 xl:pt-30 px-5 xl:px-16 gap-[5rem] sm:gap-[8rem]">
         <motion.h1
           {...scrollIn}
-          className="text-snow text-center font-nunito sm:text-5xl text-[32px] font-semibold  sm:leading-16"
+          className="text-snow text-left sm:text-center font-nunito sm:text-5xl text-[32px] font-semibold  sm:leading-16"
         >
           What You Can Do with VaxNow
         </motion.h1>

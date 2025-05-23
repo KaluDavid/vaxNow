@@ -18,7 +18,7 @@ function Privacy_Policy() {
         {...reveal}
         className="flex flex-col pt-[2rem] sm:mt-[5rem] items-center justify-center pb-[5rem] text-blue-800"
       >
-        <div className="flex sm:text-center text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full sm:px-[50px] px-5 xl:px-[100px] text-blue-800  overflow-x-hidden relative py-[7rem] overflow-hidden ">
+        <div className="flex sm:text-center text-white bg-blue-600 bg-[url('/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full sm:px-[50px] px-5 xl:px-[100px] text-blue-800  overflow-x-hidden relative py-[7rem] overflow-hidden ">
           <motion.div
             {...scaleFromTop}
             className="flex items-center flex-col gap-6 !text-white"

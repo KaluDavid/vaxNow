@@ -19,7 +19,7 @@ export default function Get_Started() {
 
         <section
           ref={toTop}
-          className="flex flex-col items-center mt-[5rem] justify-center gap-[100px]"
+          className="flex flex-col items-center mt-[2.5rem] sm:mt-[5rem] justify-center gap-[100px]"
         >
           <Hero />
           <Section_Two />

@@ -6,18 +6,20 @@ import {
   childStagger,
   parentStagger,
 } from "../../../utils/motions/motionVariants";
+import useWindowWidth from "../../../Hooks/use-window-width";
 export function Form() {
   const parent = parentStagger();
   const child = childStagger();
+  const { windowWidth } = useWindowWidth();
   return (
-    <div className="flex w-full text-left text-blue-800 bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full px-5 sm:px-[50px]  xl:px-[100px]   overflow-x-hidden relative py-20 overflow-hidden">
-      <div className="flex  min-md:flex-row flex-col size-screen justify-center rounded-3xl shadow-2xl bg-white items-center xl:gap-10 min-md:gap-0 gap-10 ">
+    <div className="flex w-full text-left text-blue-800 bg-blue-600 bg-[url('/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-center w-full px-5 sm:px-[50px]  xl:px-[100px]   overflow-x-hidden relative py-20 overflow-hidden">
+      <div className="flex w-screen justify-center rounded-3xl shadow-2xl bg-white items-center gap-10 max-lg:pb-5">
         <motion.div
           variants={parent}
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: true }}
-          className="flex xl:py-10 flex-col gap-5 items-start  min-md:pl-10 px-5 sm:px-10 w-full pb-"
+          className="flex xl:py-10 flex-col gap-5 items-start  min-md:pl-10 px-5 sm:px-10 w-full "
         >
           <motion.h1
             variants={child}
@@ -51,7 +53,7 @@ export function Form() {
             <Button style="py-3">Submit</Button>{" "}
           </motion.span>
         </motion.div>
-        <Map />
+        {windowWidth > 1024 && <Map />}
       </div>
     </div>
   );

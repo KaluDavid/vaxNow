@@ -16,7 +16,7 @@ export function Cards({ icons, title, article }: CardsProps) {
         className="hover:scale-[1.05] h-full transform transition-transform duration-300 ease-in-out flex items-start flex-col gap-8 *:flex *:flex-col *:gap-5 rounded-tr-[150px] shadow-soft-lg rounded-2xl bg-blue-50 text-blue-800 px-5 py-14 "
       >
         <div>
-          <span className="rounded-full bg-blue-200 p-2 flex items-center justify-center border border-gray-200 text-[40px] text-blue-600 size-10">
+          <span className="rounded-full bg-blue-50 p-2 flex items-center justify-center border border-gray-200 text-[40px] text-blue-600 size-10">
             {icons}
           </span>
           <h4 className="font-bold text-xl font-nunito ">{title}</h4>

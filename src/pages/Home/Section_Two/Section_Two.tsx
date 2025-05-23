@@ -9,7 +9,7 @@ const wordVariant = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.25, duration: 0.8, ease: "easeOut" },
+    transition: { staggerChildren: 0.25, duration: 0.3, ease: "easeOut" },
   },
 };
 export function Section_Two() {
@@ -47,7 +47,7 @@ export function Section_Two() {
             <motion.span
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ type: "spring", duration: 0.7, delay: 0.5 }}
+              transition={{ type: "spring", duration: 0.7, delay: 0.2 }}
               viewport={{ once: true }}
             >
               <Card style="justify-start !pt-[0px] gap-[40px]">
@@ -57,7 +57,7 @@ export function Section_Two() {
             <motion.span
               initial={{ opacity: 0, y: 100 }}
               whileInView={{ opacity: 1, y: -0 }}
-              transition={{ type: "spring", duration: 0.9, delay: 0.9 }}
+              transition={{ type: "spring", duration: 0.9, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <Card style="!pb-[0px]">

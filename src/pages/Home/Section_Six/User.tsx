@@ -22,7 +22,7 @@ export function User({ img, name, article }: Users) {
           <span className="font-nunito font-semibold text-xl ">{name}</span>
         </fieldset>
 
-        <article className="font-nunito-sans w-[292px] text-xl">
+        <article className="font-nunito-sans sm:w-[292px] text-xl">
           {article}
         </article>
       </motion.div>

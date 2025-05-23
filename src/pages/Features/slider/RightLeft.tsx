@@ -34,7 +34,7 @@ export default function RightLeft({
         {...scrollIn}
         className={`${background} lg:px-[50px] lg:py-[150px] xl:px-[100px] sm:px-[50px] lg:flex-row flex-col flex items-center justify-between  lg:gap-[88px] gap-[220px] py-[50px] pb-[13rem] px-[20px]`}
       >
-        {windowWidth > 768 && (
+        {windowWidth > 1024 && (
           <SlideRightLeftOurApp img={img} style2={style2} alt={alt} />
         )}
         <motion.span
@@ -52,7 +52,7 @@ export default function RightLeft({
           />
         </motion.span>
 
-        {windowWidth <= 768 && (
+        {windowWidth <= 1024 && (
           <SlideRightLeftOurApp img={img} style2={style2} alt={alt} />
         )}
       </motion.section>

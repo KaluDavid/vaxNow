@@ -19,7 +19,7 @@ export function Foot() {
 
   return (
     <>
-      <footer className="w-full text-white sm:rounded-tr-[300px] rounded-tr-[200px] rounded-tl-3xl bg-blue-600 bg-[url('/assets/virus.png')] pb-10 pt-[100px] xl:px-[80px] sm:px-[50px] px-[20px] flex items-start flex-col justify-start gap-[88px]">
+      <footer className="w-full text-white sm:rounded-tr-[300px] rounded-tr-[200px] rounded-tl-3xl bg-blue-600 bg-[url('/assets/virus.png')] pb-10 pt-12 sm:pt-[100px] xl:px-[80px] sm:px-[50px] px-[20px] flex items-start flex-col justify-start gap-[88px]">
         <motion.div
           variants={parent}
           initial="hidden"

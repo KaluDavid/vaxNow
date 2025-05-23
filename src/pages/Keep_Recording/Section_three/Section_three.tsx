@@ -14,7 +14,7 @@ export function Section_three() {
     <>
       <motion.div
         {...reveal}
-        className="flex lg:flex-row flex-col gap-[48px] text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center gap-0 bg-cover justify-between w-full xl:px-[100px] sm:px-[50px] text-blue-800 lg:py-[100px] py-[50px] px-[20px] overflow-x-hidden"
+        className="flex lg:flex-row flex-col gap-[48px] text-white bg-blue-600 bg-[url('/assets/Record_keeping/herovirus.png')] items-center gap-0 bg-cover justify-between w-full xl:px-[100px] sm:px-[50px] text-blue-800 lg:py-[100px] py-[50px] px-[20px] overflow-x-hidden"
       >
         <motion.div
           variants={slideBottom}

@@ -47,29 +47,35 @@ export default function Header() {
               <NavLink
                 to="/features"
                 className={({ isActive }) => (isActive ? "text-blue-600" : "")}
+                onClick={toggleMenu}
               >
                 <li>Features</li>
               </NavLink>
               <NavLink
                 to="/record_keeping"
+                onClick={toggleMenu}
                 className={({ isActive }) => (isActive ? "text-blue-600" : "")}
               >
                 <li>Record keeping</li>
               </NavLink>
               <NavLink
+                onClick={toggleMenu}
                 to="/vaccine_Education"
                 className={({ isActive }) => (isActive ? "text-blue-600" : "")}
               >
                 <li>Vaccine Education</li>
               </NavLink>
               <NavLink
+                onClick={toggleMenu}
                 to="/pricing"
                 className={({ isActive }) => (isActive ? "text-blue-600" : "")}
               >
                 <li>Pricing</li>
               </NavLink>
             </ul>
-            <Button to="/get_started">Get Started</Button>
+            <Button to="/get_started" HandleClick={toggleMenu}>
+              Get Started
+            </Button>
           </div>
         )}
 
@@ -95,34 +101,40 @@ export default function Header() {
       </motion.header>
 
       {isMenuOpen && (
-        <div className=" items-center gap-8 bg-white pt-[40px] fixed top-20 smButton:w-1/2 w-3/4 h-full flex flex-col z-40">
-          <ul className="flex flex-col *:text-nowrap  items-center gap-6 text-blue-800 *:text-xl *:font-normal ">
+        <div className=" items-start sm:pl-[60px] pl-[33px] gap-8 bg-white pt-[40px] fixed top-20 smButton:w-1/2 w-3/4 h-full flex flex-col z-40">
+          <ul className="flex flex-col *:text-nowrap  items-start  gap-6 text-blue-800 *:text-xl *:font-normal ">
             <NavLink
               to="/features"
+              onClick={toggleMenu}
               className={({ isActive }) => (isActive ? "text-blue-600" : "")}
             >
               <li>Features</li>
             </NavLink>
             <NavLink
               to="/record_keeping"
+              onClick={toggleMenu}
               className={({ isActive }) => (isActive ? "text-blue-600" : "")}
             >
               <li>Record keeping</li>
             </NavLink>
             <NavLink
               to="/vaccine_Education"
+              onClick={toggleMenu}
               className={({ isActive }) => (isActive ? "text-blue-600" : "")}
             >
               <li>Vaccine Education</li>
             </NavLink>
             <NavLink
               to="/pricing"
+              onClick={toggleMenu}
               className={({ isActive }) => (isActive ? "text-blue-600" : "")}
             >
               <li>Pricing</li>
             </NavLink>
           </ul>
-          <Button to="/get_started">Get Started</Button>
+          <Button HandleClick={toggleMenu} to="/get_started">
+            Get Started
+          </Button>
         </div>
       )}
     </>

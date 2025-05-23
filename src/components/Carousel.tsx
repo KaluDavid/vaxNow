@@ -102,7 +102,7 @@ export default function Carousel({
               src={src}
               alt={`logo-${index}`}
               className="
-                  w-auto sm:h-[100px] h-[50px] object-contain shrink-0 sm:rounded-tr-[40px] sm:rounded-bl-[40px] sm:rounded-tl-2xl rounded-[9px] sm:rounded-br-2xl  bg-blue-50 sm:py-6 sm:px-5 p-2"
+                  w-auto sm:h-[100px] h-[65px] object-contain shrink-0 sm:rounded-tr-[40px] sm:rounded-bl-[40px] sm:rounded-tl-2xl rounded-[9px] sm:rounded-br-2xl  bg-blue-50 sm:py-6 sm:px-5 p-2"
             />
           ))}
         </motion.div>

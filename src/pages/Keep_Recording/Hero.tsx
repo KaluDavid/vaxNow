@@ -65,7 +65,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              transition: { staggerChildren: 0.25, duration: 0.8, delay: 0.9 },
+              transition: { staggerChildren: 0.25, duration: 0.8, delay: 0.3 },
             }}
             viewport={{ once: true }}
             className="flex items-end justify-end flex-col [&_span]:rounded-full [&_span]:flex [&_span]:items-center [&_span]:justify-center  absolute sm-xl:mt-[-14rem] mt-[-12rem] sm-xl:ml-[-1rem] sm:ml-[-2rem] sm-lg:ml-[1.5rem]"

@@ -26,12 +26,12 @@ export function Hero_Left() {
             medication tracking
           </span>
           <div className="flex items-center gap-6 justify-between [&_div]:flex [&_div]:items-start [&_div]:flex-col">
-            <div className=" *:first:text-[32px] *:first:font-nunito *:first:font-semibold *:last:text-xl *:last:font-nunito-sans">
+            <div className=" text-2xl sm:*:first:text-[32px] *:first:font-nunito *:first:font-semibold sm:*:last:text-xl *:last:text-lg *:last:font-nunito-sans">
               <span>5k+</span>
               <span>Active users</span>
             </div>
             <hr className="bg-gray-400 h-12 w-[1px]" />
-            <div className=" *:first:text-[32px] *:first:font-nunito *:first:font-semibold *:last:text-xl *:last:font-nunito-sans">
+            <div className=" text-2xl sm:*:first:text-[32px] *:first:font-nunito *:first:font-semibold sm:*:last:text-xl *:last:text-lg *:last:font-nunito-sans">
               <span>300k+</span>
               <span>Downloads</span>
             </div>

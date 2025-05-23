@@ -17,7 +17,7 @@ export default function Pricing() {
     <>
       <section
         ref={toTop}
-        className="flex  mt-[5rem] flex-col items-center justify-center  py-[5rem] gap-[100px]"
+        className="flex mt-[2.5rem] sm:mt-[5rem] flex-col items-center justify-center  py-[5rem] gap-[100px]"
       >
         <Hero_Section />
         <Section_two />

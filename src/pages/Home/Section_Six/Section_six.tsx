@@ -9,10 +9,10 @@ export function Section_six() {
   const scrollIn = useRevealOnScroll();
   return (
     <>
-      <section className="bg-blue-600 bg-[url('/assets/home_img/section_six_img/bg.png')] py-[100px] w-full px-[80px] flex items-center flex-col justify-center gap-[88px]">
+      <section className="bg-blue-600 bg-[url('/assets/home_img/section_six_img/bg.png')] py-[100px] w-full sm:px-12.5 px-5 xl:px-[80px] flex items-center flex-col justify-center gap-[88px]">
         <motion.div
           {...scrollIn}
-          className="text-white flex-col text-center flex items-center justify-center gap-2"
+          className="text-white flex-col text-center flex items-center justify-center gap-5"
         >
           <WordAnime
             text="Hear from our satisfied users"
@@ -28,7 +28,7 @@ export function Section_six() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex items-center gap-6"
+          className="flex max-lg:flex-wrap items-center gap-6 "
         >
           <User
             img="/assets/home_img/section_six_img/lady1.png"

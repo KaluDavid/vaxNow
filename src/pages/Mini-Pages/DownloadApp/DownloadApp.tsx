@@ -35,7 +35,7 @@ function DownloadApp() {
           >
             {windowWidth > 884 && (
               <OurApp
-                img="/public/assets/Features_img/Vaccine Tracker.png"
+                img="/assets/Features_img/Vaccine Tracker.png"
                 style="bg-blue-600"
                 alt="vaccine tracker"
               />
@@ -73,7 +73,7 @@ function DownloadApp() {
             </motion.div>
             {windowWidth < 884 && (
               <OurApp
-                img="/public/assets/Features_img/Vaccine Tracker.png"
+                img="/assets/Features_img/Vaccine Tracker.png"
                 style="bg-blue-600 sm:max-fold2:mb-[5rem]"
                 alt="vaccine tracker"
               />

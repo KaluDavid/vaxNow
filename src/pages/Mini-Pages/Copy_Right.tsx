@@ -12,7 +12,7 @@ function Copy_Right() {
     <>
       <section
         ref={toTop}
-        className="mt-[5rem]  flex flex-col items-center justify-center pb-[5rem] text-blue-800 py-20"
+        className="sm:mt-[5rem] mt-[2.5rem] flex flex-col items-center justify-center pb-[5rem] text-blue-800 py-20"
       >
         <WordAnime text="Copyright Policy" />
         <div className="grid lg:grid-cols-2 gap-8 pt-20 max-sm:px-[20px] px-[50px]  xl:px-20 items-start justify-start ">
