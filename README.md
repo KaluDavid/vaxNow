@@ -43,10 +43,10 @@ It focuses on clarity, accessibility, motion, and visual impact to educate users
 
 ## 🛠️ Tech Stack
 
-- **React + TypeScript** – Component-based development for scalability and type safety  
-- **Tailwind CSS** – For utility-first, responsive styling  
-- **Framer Motion** – Smooth animations and transitions  
-- **Atropos.js** – Immersive 3D parallax effects  
+- ⚛️ React + TypeScript 
+- 🔠Tailwind CSS
+- 🎨Framer Motion 
+- 🎨Atropos.js –  
 
 ---
 
@@ -79,6 +79,7 @@ This project was built in collaboration with **[Edidiong Kalu](https://www.linke
 **Developer:** Kalu David  
 Frontend Developer | UI Specialist
 📧 mrkaludavid@gmail.com
+
 💼  [LinkedIn](https://www.linkedin.com/in/kalu-david-a2771723a/)
 
 [LinkedIn](https://www.linkedin.com/in/kalu-david-a2771723a/)
