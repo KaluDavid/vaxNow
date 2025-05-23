@@ -21,23 +21,27 @@ It focuses on clarity, accessibility, motion, and visual impact to educate users
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots for a few screens 
 
-### 🌐 Desktop View
-
-- **Landing Page**  
-  ![Landing Screenshot](./screenshots/landing-desktop.png)
-
-- **About Page**  
-  ![About Screenshot](./screenshots/about-desktop.png)
+### 🌐 Desktop View  
+![Screenshot from 2025-05-23 19-51-08](https://github.com/user-attachments/assets/1a3ec3f3-5965-40a7-9b59-3abe46e4f852)
+![Screenshot from 2025-05-23 19-51-52](https://github.com/user-attachments/assets/4ecf0c91-565c-475a-bde4-c776a650a014)
+![Screenshot from 2025-05-23 19-51-22](https://github.com/user-attachments/assets/14963c62-da97-486d-ab28-faed3389655f)
 
 ---
 
-### 📱 Mobile & Tablet View
+### 🌐 Tablet View  
+![4](https://github.com/user-attachments/assets/d6552cf3-d478-46ba-b703-288c919a5259)
+![3](https://github.com/user-attachments/assets/868278b7-9780-4837-9150-1de080577006)
 
-- **Mobile View**  
-  ![Landing Mobile](./screenshots/landing-mobile.png)  
-  ![About Mobile](./screenshots/about-mobile.png)
+---
+
+### 📱 Mobile 
+
+- **Mobile View**
+![1](https://github.com/user-attachments/assets/55a3b51b-1113-42c0-b144-f8c1292c555a)
+![2](https://github.com/user-attachments/assets/9e775765-09b4-4d22-91b2-fa113ca36591)
+
 
 ---
 
@@ -46,7 +50,7 @@ It focuses on clarity, accessibility, motion, and visual impact to educate users
 - ⚛️ React + TypeScript 
 - 🔠Tailwind CSS
 - 🎨Framer Motion 
-- 🎨Atropos.js –  
+- 🎨Atropos.js 
 
 ---
 
@@ -77,13 +81,7 @@ This project was built in collaboration with **[Edidiong Kalu](https://www.linke
 ## 🛠 Built By
 
 **Developer:** Kalu David  
-Frontend Developer | UI Specialist
+Frontend Engineer || UI Specialist
 📧 mrkaludavid@gmail.com
 
 💼  [LinkedIn](https://www.linkedin.com/in/kalu-david-a2771723a/)
-
-[LinkedIn](https://www.linkedin.com/in/kalu-david-a2771723a/)
-
----
-
-
