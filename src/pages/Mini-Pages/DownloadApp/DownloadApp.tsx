@@ -12,7 +12,7 @@ import {
 import WordAnime from "../../../utils/motions/WordAnime";
 import useWindowWidth from "../../../Hooks/use-window-width";
 function DownloadApp() {
-  useTitleChange({ title: "Terms Of Service" });
+  useTitleChange({ title: "Download App" });
   // back to top on page reload
   const toTop = useBackToTop();
 
@@ -81,6 +81,7 @@ function DownloadApp() {
           </motion.div>
         </section>
         <Waitlist />
+
         <Foot />
       </section>
     </>
