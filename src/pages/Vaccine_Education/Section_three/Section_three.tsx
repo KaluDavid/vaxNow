@@ -11,7 +11,7 @@ export function Section_three() {
     <>
       <motion.div
         {...scaleIn}
-        className="flex flex-col mb-[100px] py-20 bg-blue-50 bg-[url('/public/assets/Vaccine_education/ArticlesBG.svg')] items-center bg-cover justify-between w-full  text-blue-800 gap-[60px] text-center overflow-x-hidden"
+        className="flex flex-col mb-[100px] py-20 bg-blue-50 bg-[url('/assets/Vaccine_education/ArticlesBG.svg')] items-center bg-cover justify-between w-full  text-blue-800 gap-[60px] text-center overflow-x-hidden"
       >
         <WordAnime text="Read up our latest articles" />
         <motion.div
@@ -22,7 +22,7 @@ export function Section_three() {
           className="grid xl:grid-cols-3 px-[20px] lg:grid-cols-2 gap-10 "
         >
           <Cards
-            img="/public/assets/Vaccine_education/img1.png"
+            img="/assets/Vaccine_education/img1.png"
             heading="Importance of childhood immunization"
           >
             Vaccines have eliminated smallpox and have nearly eliminated other
@@ -44,7 +44,7 @@ export function Section_three() {
             foundation for a healthier life.
           </Cards>
           <Cards
-            img="/public/assets/Vaccine_education/img2.png"
+            img="/assets/Vaccine_education/img2.png"
             heading="Vaccine safety and myths"
           >
             Vaccine-preventable diseases may be less common in your country, but
@@ -62,10 +62,10 @@ export function Section_three() {
             <br />
             Understanding the science behind vaccines and relying on credible
             medical sources can help dispel fears and encourage more people to
-            get vaccinated, ultimately strengthening public health.
+            get vaccinated, ultimately strengtheninghealth.
           </Cards>
           <Cards
-            img="/public/assets/Vaccine_education/img3.png"
+            img="/assets/Vaccine_education/img3.png"
             heading="Vaccine preventable diseases"
           >
             Infections caused by these diseases can result in hospitalizations
@@ -87,7 +87,7 @@ export function Section_three() {
             weakened immune systems.
           </Cards>
           <Cards
-            img="/public/assets/Vaccine_education/img4.png"
+            img="/assets/Vaccine_education/img4.png"
             heading="Healthy lifestyle tips for families"
           >
             Vaccines have eliminated smallpox and have nearly eliminated other
@@ -108,7 +108,7 @@ export function Section_three() {
             reduce the risk of preventable diseases.
           </Cards>
           <Cards
-            img="/public/assets/Vaccine_education/img5.png"
+            img="/assets/Vaccine_education/img5.png"
             heading="Nutrition and child development"
           >
             Vaccine-preventable diseases may be less common in your country, but
@@ -130,7 +130,7 @@ export function Section_three() {
             immunization helps foster healthier future generations.
           </Cards>
           <Cards
-            img="/public/assets/Vaccine_education/img6.png"
+            img="/assets/Vaccine_education/img6.png"
             heading="First aid essentials for parents"
           >
             Infections caused by these diseases can result in hospitalizations

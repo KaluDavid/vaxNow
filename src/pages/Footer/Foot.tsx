@@ -19,7 +19,7 @@ export function Foot() {
 
   return (
     <>
-      <footer className="w-full text-white sm:rounded-tr-[300px] rounded-tr-[200px] rounded-tl-3xl bg-blue-600 bg-[url('/public/assets/virus.png')] pb-10 pt-[100px] xl:px-[80px] sm:px-[50px] px-[20px] flex items-start flex-col justify-start gap-[88px]">
+      <footer className="w-full text-white sm:rounded-tr-[300px] rounded-tr-[200px] rounded-tl-3xl bg-blue-600 bg-[url('/assets/virus.png')] pb-10 pt-[100px] xl:px-[80px] sm:px-[50px] px-[20px] flex items-start flex-col justify-start gap-[88px]">
         <motion.div
           variants={parent}
           initial="hidden"
@@ -34,7 +34,7 @@ export function Foot() {
           >
             <Link to="">
               <fieldset>
-                <img src="/public/assets/vax.png" alt="vaxnow" />
+                <img src="/assets/vax.png" alt="vaxnow" />
               </fieldset>
             </Link>
             <div className="flex items-center gap-6 *:flex *:justify-center *:items-center *:rounded-full *:w-10 *:h-10 *:bg-white *:text-xl *:text-blue-800">

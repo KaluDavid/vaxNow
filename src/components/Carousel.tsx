@@ -2,14 +2,14 @@ import { useRef, useState } from "react";
 import { motion, useAnimationFrame } from "framer-motion";
 
 const images = [
-  "/public/assets/home_img/section_seven_img/logo1.png",
-  "/public/assets/home_img/section_seven_img/logo2.png",
-  "/public/assets/home_img/section_seven_img/logo3.png",
-  "/public/assets/home_img/section_seven_img/logo4.png",
-  "/public/assets/home_img/section_seven_img/logo5.png",
-  "/public/assets/home_img/section_seven_img/logo6.png",
-  "/public/assets/home_img/section_seven_img/logo7.png",
-  "/public/assets/home_img/section_seven_img/logo8.png",
+  "/assets/home_img/section_seven_img/logo1.png",
+  "/assets/home_img/section_seven_img/logo2.png",
+  "/assets/home_img/section_seven_img/logo3.png",
+  "/assets/home_img/section_seven_img/logo4.png",
+  "/assets/home_img/section_seven_img/logo5.png",
+  "/assets/home_img/section_seven_img/logo6.png",
+  "/assets/home_img/section_seven_img/logo7.png",
+  "/assets/home_img/section_seven_img/logo8.png",
 ];
 
 interface CarouselProps {

@@ -52,7 +52,7 @@ export default function Section_Eight() {
                 viewport={{ once: true }}
               >
                 <Button to="/DownloadApp" style="bg-blue-800 w-full flex-row">
-                  <img src="/public/assets/whiteapple.svg" alt="" />
+                  <img src="/assets/whiteapple.svg" alt="" />
                   <span className="flex flex-col items-start text-base text-left">
                     <small className="text-[12px]">Download on the</small>
                     <strong>App Store</strong>
@@ -66,7 +66,7 @@ export default function Section_Eight() {
                 viewport={{ once: true }}
               >
                 <Button to="/DownloadApp" style="bg-blue-800 w-full flex-row">
-                  <img src="/public/assets/playstore.svg" alt="" />
+                  <img src="/assets/playstore.svg" alt="" />
                   <span className="flex flex-col items-start text-base text-left">
                     <small className="text-[12px]">Download on the</small>
                     <strong>App Store</strong>

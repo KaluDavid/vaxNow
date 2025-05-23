@@ -13,7 +13,7 @@ export function Section_three() {
     <>
       <motion.div
         {...onScroll}
-        className="flex lg:flex-row flex-col lg:max-xl:gap-[50px] gap-[88px] text-white bg-blue-600 bg-[url('/public/assets/Record_keeping/herovirus.png')] items-start gap-0 bg-cover justify-start w-full xl:pr-[100px]   text-blue-800  overflow-x-hidden max-[769px]:pb-[100px]"
+        className="flex lg:flex-row flex-col lg:max-xl:gap-[50px] gap-[88px] text-white bg-blue-600 bg-[url('/assets/Record_keeping/herovirus.png')] items-start gap-0 bg-cover justify-start w-full xl:pr-[100px]   text-blue-800  overflow-x-hidden max-[769px]:pb-[100px]"
       >
         <motion.fieldset
           variants={slideLeft}
@@ -22,7 +22,7 @@ export function Section_three() {
           viewport={{ once: true }}
         >
           <img
-            src="/public/assets/larry.png"
+            src="/assets/larry.png"
             alt="Larry Brilliant"
             className="max-w-full h-full lg:max-xl:max-w-[100vh]  sm:min-w-[390px] lg:max-xl:h-screen object-fill  "
           />

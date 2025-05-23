@@ -22,7 +22,7 @@ export function Section_Two() {
         {...revealOnScroll}
         className=" px-5 sm:px-[50px] lg:mb-[12rem]"
       >
-        <div className="flex items-center flex-col justify-between w-full  lg:h-[29rem] pb-10 bg-blue-600 sm:rounded-tr-[200px] rounded-tr-[150px] rounded-2xl bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat xl:px-16 sm:px-[50px] px-5  gap-14">
+        <div className="flex items-center flex-col justify-between w-full  lg:h-[29rem] pb-10 bg-blue-600 sm:rounded-tr-[200px] rounded-tr-[150px] rounded-2xl bg-[url('/assets/home_img/section_two_img/sect.svg')] bg-no-repeat xl:px-16 sm:px-[50px] px-5  gap-14">
           <motion.h1
             variants={wordVariant}
             initial="hidden"

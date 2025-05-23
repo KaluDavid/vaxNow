@@ -41,7 +41,7 @@ export function Item() {
       className="flex  items-center justify-center w-full h-full "
     >
       <img
-        src="/public/assets/Record_keeping/cloud.png"
+        src="/assets/Record_keeping/cloud.png"
         alt="cloud security"
         className="relative flex max-lg:mr-[-20rem] max-sm:mr-[-15rem] sm-lg:mr-[-11rem] sm-lg:ml-0 ml-[-5rem] lg:mr-0"
       />

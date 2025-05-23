@@ -19,7 +19,7 @@ export function Hero() {
     <>
       <motion.div
         {...reveal}
-        className="flex-col lg:flex-row flex text-white bg-blue-600 max-lg:gap-[100px]  bg-[url('/public/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-between w-full  text-blue-800 py-[100px] overflow-x-hidden max-sm:px-[20px] px-[50px] min-[1270px]:px-[100px]  sm:max-min-[1279px]:px-[50px]"
+        className="flex-col lg:flex-row flex text-white bg-blue-600 max-lg:gap-[100px]  bg-[url('/assets/Record_keeping/herovirus.png')] items-center bg-cover justify-between w-full  text-blue-800 py-[100px] overflow-x-hidden max-sm:px-[20px] px-[50px] min-[1270px]:px-[100px]  sm:max-min-[1279px]:px-[50px]"
       >
         <motion.div
           {...scaleFromTop}
@@ -56,7 +56,7 @@ export function Hero() {
         >
           <fieldset className=" object-fill flex w-full sm-xl:p-[16rem] sm-lg:p-[13rem] sm-sm:p-[11rem] p-[10rem] items-end justify-end bg-white rounded-full relative">
             <img
-              src="/public/assets/Record_keeping/Vaccine Tracker.png"
+              src="/assets/Record_keeping/Vaccine Tracker.png"
               alt="vaccine tracker"
               className="sm-xl:w-[290px]  sm-xl:right-30  sm-lg:w-[240px] sm-sm:w-[200px] w-[190px] bottom-8 sm-lg:right-23 rounded-t-[35px] sm-sm:right-18 right-16 border-[#002F56] border-x-[10px] border-t-[10px] object-fill  rounded-b-[13px] absolute"
             />

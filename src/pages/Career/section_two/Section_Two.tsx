@@ -14,7 +14,7 @@ export function Section_Two() {
       {...reveal}
       className="w-full flex lg:mb-[14rem] items-center"
     >
-      <div className="flex items-center flex-col justify-between w-full lg:h-[29rem] bg-blue-600  bg-[url('/public/assets/home_img/section_two_img/sect.svg')] bg-no-repeat xl:px-16 sm:px-[50px] px-[20px] lg:gap-[8rem] gap-15 sm:gap-20 lg:pt-30  max-lg:py-20 text-white">
+      <div className="flex items-center flex-col justify-between w-full lg:h-[29rem] bg-blue-600  bg-[url('/assets/home_img/section_two_img/sect.svg')] bg-no-repeat xl:px-16 sm:px-[50px] px-[20px] lg:gap-[8rem] gap-15 sm:gap-20 lg:pt-30  max-lg:py-20 text-white">
         <WordAnime text="Why work with us?" />
         <motion.div
           variants={parent}

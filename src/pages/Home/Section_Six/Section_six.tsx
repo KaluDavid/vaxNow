@@ -9,7 +9,7 @@ export function Section_six() {
   const scrollIn = useRevealOnScroll();
   return (
     <>
-      <section className="bg-blue-600 bg-[url('/public/assets/home_img/section_six_img/bg.png')] py-[100px] w-full px-[80px] flex items-center flex-col justify-center gap-[88px]">
+      <section className="bg-blue-600 bg-[url('/assets/home_img/section_six_img/bg.png')] py-[100px] w-full px-[80px] flex items-center flex-col justify-center gap-[88px]">
         <motion.div
           {...scrollIn}
           className="text-white flex-col text-center flex items-center justify-center gap-2"

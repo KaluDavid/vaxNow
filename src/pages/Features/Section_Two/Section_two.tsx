@@ -4,8 +4,8 @@ export function Section_two() {
   return (
     <>
       <RightLeft
-        background="bg-blue-600 bg-[url('/public/assets/Features_img/section2Bg.png')]"
-        img="/public/assets/Features_img/Vaccine Tracker.png"
+        background="bg-blue-600 bg-[url('/assets/Features_img/section2Bg.png')]"
+        img="/assets/Features_img/Vaccine Tracker.png"
         style2="bg-white"
         alt="vaccine tracker"
         style="text-white"

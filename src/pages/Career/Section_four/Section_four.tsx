@@ -13,7 +13,7 @@ export function Section_four() {
     <>
       <motion.section
         {...reveal}
-        className="flex flex-col sm:flex-row items-start justify-between w-full  bg-blue-600  bg-[url('/public/assets/rolesVirus.svg')]  bg-center lg:px-20 sm:px-[50px] px-[20px] lg:gap-[8rem] max-sm:gap-[80px] lg:pt-28 py-[62px] "
+        className="flex flex-col sm:flex-row items-start justify-between w-full  bg-blue-600  bg-[url('/assets/rolesVirus.svg')]  bg-center lg:px-20 sm:px-[50px] px-[20px] lg:gap-[8rem] max-sm:gap-[80px] lg:pt-28 py-[62px] "
       >
         <motion.div
           variants={parent}
