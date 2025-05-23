@@ -13,11 +13,13 @@ const articleStyle = {
   overflow: "hidden",
   display: "-webkit-box",
 };
+
+const close = {};
 export function Cards({ img, heading, children }: CardsProps) {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   const child = childStagger();
-  const toggle = isExpanded ? null : articleStyle;
+  const toggle = isExpanded ? close : articleStyle;
   return (
     <>
       <motion.div

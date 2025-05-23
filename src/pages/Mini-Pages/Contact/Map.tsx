@@ -6,9 +6,9 @@ function Map() {
         width="100%"
         height="100%"
         className="border-0 min-md:rounded-r-[24px] max-min-md:rounded-b-[24px] min-md:size-screen min-md:h-screen h-[50vh] min-md:w-[70vh] w-[63vh] max-sm:w-[43vh]"
-        allowfullscreen
+        allowFullScreen
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
   );
