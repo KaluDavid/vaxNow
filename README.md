@@ -16,7 +16,7 @@ It focuses on clarity, accessibility, motion, and visual impact to educate users
 
 ## Live Preview
 
-👉 [Live Website Link](https://vax-now.vercel.app/)  
+[Live Website Link](https://vax-now.vercel.app/)  
 
 ---
 
