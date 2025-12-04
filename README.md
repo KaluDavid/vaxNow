@@ -6,7 +6,7 @@ VaxNow is a responsive and engaging web experience designed to raise awareness a
 
 ---
 
-## 🧠 Project Objective
+## Project Objective
 
 This website acts as a promotional landing page for the ImmuniSafe app, delivering core value messaging while encouraging users to anticipate and download the full app. 
 
@@ -14,22 +14,22 @@ It focuses on clarity, accessibility, motion, and visual impact to educate users
 
 ---
 
-## 🚀 Live Preview
+## Live Preview
 
 👉 [Live Website Link](https://vax-now.vercel.app/)  
 
 ---
 
-## 📸 Screenshots for a few screens 
+## Screenshots for a few screens 
 
-### 🌐 Desktop View  
+### Desktop View  
 ![Screenshot from 2025-05-23 19-51-08](https://github.com/user-attachments/assets/1a3ec3f3-5965-40a7-9b59-3abe46e4f852)
 ![Screenshot from 2025-05-23 19-51-52](https://github.com/user-attachments/assets/4ecf0c91-565c-475a-bde4-c776a650a014)
 ![Screenshot from 2025-05-23 19-51-22](https://github.com/user-attachments/assets/14963c62-da97-486d-ab28-faed3389655f)
 
 ---
 
-### 🌐 Tablet View  
+### Tablet View  
 ![4](https://github.com/user-attachments/assets/d6552cf3-d478-46ba-b703-288c919a5259)
 ![3](https://github.com/user-attachments/assets/868278b7-9780-4837-9150-1de080577006)
 
@@ -44,16 +44,16 @@ It focuses on clarity, accessibility, motion, and visual impact to educate users
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- ⚛️ React + TypeScript 
-- 🔠Tailwind CSS
-- 🎨Framer Motion 
-- 🎨Atropos.js 
+- React + TypeScript 
+- Tailwind CSS
+- Framer Motion 
+- Atropos.js 
 
 ---
 
-## ✨ Features
+## Features
 
 - Fully responsive for **mobile and tablet**
 - Eye-catching 3D animation effects with **Atropos.js**
@@ -63,24 +63,13 @@ It focuses on clarity, accessibility, motion, and visual impact to educate users
 
 ---
 
-## 🤝 Collaboration
+## Collaboration
 
 This project was built in collaboration with **[Edidiong Kalu](https://www.linkedin.com/in/edidiongkalu/)**, a Product Designer who crafted the site's visual identity and user experience flows.
 
 ---
 
-## 📌 Project Status
+## Project Status
 
-🔧 **Version 1.0** – Static promotional website completed and deployed.  
-📱 **Main App (ImmuniSafe)** – In progress, currently under development.
-
----
-
-
-## 🛠 Built By
-
-**Developer:** Kalu David  
-Frontend Engineer || UI Specialist
-📧 mrkaludavid@gmail.com
-
-💼  [LinkedIn](https://www.linkedin.com/in/kalu-david-a2771723a/)
+**Version 1.0** – Static promotional website completed and deployed.  
+**Main App (ImmuniSafe)** – In progress, currently under development.
