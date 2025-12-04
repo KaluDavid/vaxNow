@@ -37,7 +37,12 @@ export function OurApp({ style, img, alt }: OurAppProps) {
           className="rounded-[35px] border-[#002F56] border-[10px] object-fill absolute w-[235px] h-[480px]"
         >
           <Atropos>
-            <img src={img} alt={alt} className=" object-fill rounded-none" />
+            <img
+              src={img}
+              alt={alt}
+              className=" object-fill rounded-none"
+              loading="lazy"
+            />
           </Atropos>
         </motion.fieldset>
       </div>

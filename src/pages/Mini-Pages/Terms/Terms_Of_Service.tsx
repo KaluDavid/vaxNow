@@ -25,7 +25,7 @@ function Terms_Of_Service() {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          <img src="/assets/term.png" alt="terms of service" />
+          <img loading="lazy" src="/assets/term.png" alt="terms of service" />
         </motion.fieldset>
         <motion.div
           {...reveal}

@@ -34,7 +34,7 @@ export function Foot() {
           >
             <Link to="">
               <fieldset>
-                <img src="/assets/vax.png" alt="vaxnow" />
+                <img src="/assets/vax.png" alt="vaxnow" loading="lazy" />
               </fieldset>
             </Link>
             <div className="flex items-center gap-6 *:flex *:justify-center *:items-center *:rounded-full *:w-10 *:h-10 *:bg-white *:text-xl *:text-blue-800">

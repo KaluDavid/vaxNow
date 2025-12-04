@@ -6,6 +6,7 @@ export function Card_one() {
       </h2>
       <div className="bg-white border-[#002F56] border-[10px] border-b-0 rounded-b-none rounded-3xl mx-10">
         <img
+          loading="lazy"
           src="/assets/home_img/section_two_img/Vaccine Tracker.png"
           alt="Vaccine Tracker"
         />

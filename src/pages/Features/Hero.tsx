@@ -46,6 +46,7 @@ export function Hero() {
         >
           <fieldset className="max-w-full h-full flex items-end justify-end object-contain pt-[49px] pl-[114px] ">
             <img
+              loading="lazy"
               src="/assets/Features_img/hand.png"
               alt=""
               className="max-w-full object-fill lg:min-w-[350px] md:max-lg:max-w-[590px] "

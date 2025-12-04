@@ -3,6 +3,7 @@ export function Card_Two() {
     <>
       <div className="bg-white border-[#002F56] border-[10px] border-t-0 rounded-t-none rounded-3xl mx-10">
         <img
+          loading="lazy"
           src="/assets/home_img/section_two_img/Medication Tracker.png"
           alt="Medication Tracker"
         />

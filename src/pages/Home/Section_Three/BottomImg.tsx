@@ -12,6 +12,7 @@ export function BottomImg() {
       viewport={{ once: true }}
     >
       <img
+        loading="lazy"
         src="/assets/home_img/section_three_img/lady.png"
         alt="family photo"
         className=" w-auto h-auto object-contain lg:pl-0 sm:max-lg:pl-[50px] pl-5"

@@ -18,7 +18,7 @@ export function User({ img, name, article }: Users) {
           className="flex items-center gap-3
         "
         >
-          <img src={img} alt="users image" />
+          <img loading="lazy" src={img} alt="users image" />
           <span className="font-nunito font-semibold text-xl ">{name}</span>
         </fieldset>
 

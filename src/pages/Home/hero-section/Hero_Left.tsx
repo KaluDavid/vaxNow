@@ -50,10 +50,15 @@ export function Hero_Left() {
               </p>
               <fieldset className="flex items-center gap-6 ">
                 <img
+                  loading="lazy"
                   src="/assets/home_img/NGHealth.svg"
                   alt="ministry of health"
                 />
-                <img src="/assets/home_img/NAFDAC.svg" alt="NAFDAC" />
+                <img
+                  src="/assets/home_img/NAFDAC.svg"
+                  alt="NAFDAC"
+                  loading="lazy"
+                />
               </fieldset>
             </motion.div>
           </div>

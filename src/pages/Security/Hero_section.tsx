@@ -48,6 +48,7 @@ export function Hero_section() {
           className="*:size-full *:object-contain items-center"
         >
           <img
+            loading="lazy"
             src="/assets/security/protected.png"
             alt="protected"
             className="lg:min-w-[400px]"

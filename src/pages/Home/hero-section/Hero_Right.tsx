@@ -75,6 +75,7 @@ export function Hero_Right() {
           >
             <div className="flex  items-center gap-2">
               <img
+                loading="lazy"
                 src="/assets/home_img/helen.svg"
                 alt="family picture"
                 className="w-5 object-contain"

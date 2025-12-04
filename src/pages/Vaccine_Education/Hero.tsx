@@ -69,6 +69,7 @@ export function Hero() {
             <Atropos>
               {" "}
               <img
+                loading="lazy"
                 src="/assets/Vaccine_education/Home.png"
                 alt="our app"
                 className=" object-fill rounded-none"

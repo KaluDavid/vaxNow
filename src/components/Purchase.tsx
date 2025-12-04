@@ -34,7 +34,7 @@ export function Purchase({
           <fieldset
             className={`flex p-2 items-center justify-center rounded-full  ${tag_Style} `}
           >
-            <img src={tag} alt="tag" />
+            <img src={tag} alt="tag" loading="lazy" />
           </fieldset>
           <p className=" text-lg font-normal ">{category}</p>
         </div>

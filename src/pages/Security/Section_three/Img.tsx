@@ -11,7 +11,7 @@ export function Img() {
       viewport={{ once: true }}
       className="*:size-full *:object-contain items-center"
     >
-      <img src="/assets/security/data.png" alt="data breach" />
+      <img loading="lazy" src="/assets/security/data.png" alt="data breach" />
     </motion.fieldset>
   );
 }

@@ -16,6 +16,7 @@ export function Top() {
           viewport={{ once: true }}
         >
           <img
+            loading="lazy"
             src="/assets/home_img/section_three_img/family1.png"
             alt="family photo"
             className=" w-auto lg:pr-0 sm:max-lg:pr-[50px] pr-5 h-auto object-contain lg:min-w-[532px]"

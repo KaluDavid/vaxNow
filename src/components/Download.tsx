@@ -38,7 +38,7 @@ export function Download({ button, playstore }: DownloadProps) {
             to="/DownloadApp"
             style={` text-nowrap gap-2.5 w-full ${playstore}`}
           >
-            <img src="/assets/playstore.svg" alt="playstore" />
+            <img src="/assets/playstore.svg" alt="playstore" loading="lazy" />
             <hr className=" bg-gray-400 h-8 w-[1px]" />
             <span className="text-3xl">
               <FaApple />

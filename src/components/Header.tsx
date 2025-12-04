@@ -35,6 +35,7 @@ export default function Header() {
       >
         <NavLink to="/">
           <img
+            loading="lazy"
             src="/assets/logo.svg"
             alt="vaxNow Logo"
             className=" object-contain w-[79.997px]  sm-xl:w-[126px] shrink-0 "

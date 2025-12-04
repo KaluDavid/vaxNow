@@ -22,6 +22,7 @@ export function Section_three() {
           viewport={{ once: true }}
         >
           <img
+            loading="lazy"
             src="/assets/larry.png"
             alt="Larry Brilliant"
             className="max-w-full h-full lg:max-xl:max-w-[100vh]  sm:min-w-[390px] lg:max-xl:h-screen object-fill  "

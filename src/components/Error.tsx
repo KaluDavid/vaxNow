@@ -18,7 +18,7 @@ function Error() {
         className="flex text-blue-800 bg-gray-150 xl:flex-row flex-col items-center justify-center gap-20.5 h-screen"
       >
         <fieldset className="object-contain shrink-0 max-w-full max-sm:w-[300px]">
-          <img src="/assets/error.svg" alt="404" />
+          <img src="/assets/error.svg" alt="404" loading="lazy" />
         </fieldset>
         <div className="flex  flex-col items-start text-left gap-8">
           <div className=" *:first:text-blue-600 *:first:font-comic-sans-ms *:first:font-bold sm:*:first:text-2xl">

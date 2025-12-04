@@ -37,6 +37,7 @@ function Hero() {
           className="lg:w-[390px] max-w-[290px] lg:h-[575px] object-contain flex *:bg-white"
         >
           <img
+            loading="lazy"
             src="/assets/Doc.png"
             alt="vaccine tracker"
             className=" rounded-[30px] border-[#002F56] border-[10px] object-fill size-full  lg:mr-[8.5%]"

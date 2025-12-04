@@ -27,6 +27,7 @@ export default function Section_Eight() {
             className="rounded-3xl border-[#002F56] border-[10px] object-contain min-w-[195.407px] max-w-[208.602px]"
           >
             <img
+              loading="lazy"
               src="/assets/home_img/Section_Four_img/Home.png"
               alt="medic home"
               className="w-full h-full rounded-[10px] object-contain"
@@ -52,7 +53,7 @@ export default function Section_Eight() {
                 viewport={{ once: true }}
               >
                 <Button to="/DownloadApp" style="bg-blue-800 w-full flex-row">
-                  <img src="/assets/whiteapple.svg" alt="" />
+                  <img src="/assets/whiteapple.svg" alt="" loading="lazy" />
                   <span className="flex flex-col items-start text-base text-left">
                     <small className="text-[12px]">Download on the</small>
                     <strong>App Store</strong>
@@ -66,7 +67,7 @@ export default function Section_Eight() {
                 viewport={{ once: true }}
               >
                 <Button to="/DownloadApp" style="bg-blue-800 w-full flex-row">
-                  <img src="/assets/playstore.svg" alt="" />
+                  <img src="/assets/playstore.svg" alt="" loading="lazy" />
                   <span className="flex flex-col items-start text-base text-left">
                     <small className="text-[12px]">Download on the</small>
                     <strong>App Store</strong>

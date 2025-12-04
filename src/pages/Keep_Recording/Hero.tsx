@@ -56,6 +56,7 @@ export function Hero() {
         >
           <fieldset className=" object-fill flex w-full sm-xl:p-[16rem] sm-lg:p-[13rem] sm-sm:p-[11rem] p-[10rem] items-end justify-end bg-white rounded-full relative">
             <img
+              loading="lazy"
               src="/assets/Record_keeping/Vaccine Tracker.png"
               alt="vaccine tracker"
               className="sm-xl:w-[290px]  sm-xl:right-30  sm-lg:w-[240px] sm-sm:w-[200px] w-[190px] bottom-8 sm-lg:right-23 rounded-t-[35px] sm-sm:right-18 right-16 border-[#002F56] border-x-[10px] border-t-[10px] object-fill  rounded-b-[13px] absolute"

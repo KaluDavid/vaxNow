@@ -44,6 +44,7 @@ export function Section_two() {
             viewport={{ once: true }}
           >
             <img
+              loading="lazy"
               src="/assets/Record_keeping/image 62.png"
               alt="image 62"
               className="sm:max-w-full xl:mr-[50px] lg:pr-[50px] xl:max-w-[401px] min-w-[150px] mid-sm:max-w-[330px] sm-lg:max-w-[360px] sm-sm:max-w-[300px] max-w-[250px] "
@@ -64,6 +65,7 @@ export function Section_two() {
               className="flex flex-col justify-end items-end md:max-lg:w-[25rem] xl:min-w-[497px] md:w-[30rem] *:rounded-b-3xl size-full"
             >
               <img
+                loading="lazy"
                 src="/assets/Record_keeping/lady_and_baby.png"
                 alt="lady_and_baby"
                 className="max-md:w-full object-contain"
@@ -95,6 +97,7 @@ export function Section_two() {
               className="flex items-center size-full justify-center sm:max-w-[40%] sm-lg:w-[17rem] min-w-[40%] fold2:max-lg:min-w-full"
             >
               <img
+                loading="lazy"
                 src="/assets/Record_keeping/key.png"
                 alt="privacy"
                 className="size-auto"

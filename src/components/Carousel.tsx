@@ -98,6 +98,7 @@ export default function Carousel({
           {/* Duplicate the list of images to simulate infinite scroll */}
           {[...images, ...images].map((src, index) => (
             <img
+              loading="lazy"
               key={index}
               src={src}
               alt={`logo-${index}`}

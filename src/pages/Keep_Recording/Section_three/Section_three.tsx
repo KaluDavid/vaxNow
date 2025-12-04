@@ -42,6 +42,7 @@ export function Section_three() {
           className=""
         >
           <img
+            loading="lazy"
             src="/assets/Record_keeping/sharing_with_doctors.png"
             alt="sharing_with_doctors"
             className=" md:min-w-[450px]  object-cover"

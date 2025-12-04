@@ -21,7 +21,12 @@ export function Section_Two() {
           viewport={{ once: true }}
           className=" object-fill flex items-center relative "
         >
-          <img src="/assets/Vaccine_education/doc.png" alt="doc" className="" />
+          <img
+            loading="lazy"
+            src="/assets/Vaccine_education/doc.png"
+            alt="doc"
+            className=""
+          />
         </motion.fieldset>
       </motion.div>
     </>

@@ -11,7 +11,7 @@ export function Img2() {
       viewport={{ once: true }}
       className="*:w-[450px] lg:min-w-[300px]  *:object-contain items-center"
     >
-      <img src="/assets/security/security.png" alt="security" />
+      <img loading="lazy" src="/assets/security/security.png" alt="security" />
     </motion.fieldset>
   );
 }
